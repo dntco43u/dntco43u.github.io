@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>keepass on 대충어쩌고저쩌고docs</title><link>https://hu.gvp6nx1a.duckdns.org/tags/keepass/</link><description>Recent content in keepass on 대충어쩌고저쩌고docs</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://hu.gvp6nx1a.duckdns.org/tags/keepass/index.xml" rel="self" type="application/rss+xml"/><item><title>keepass</title><link>https://hu.gvp6nx1a.duckdns.org/infra/keepass/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://hu.gvp6nx1a.duckdns.org/infra/keepass/</guid><description>&lt;h2 id="개요"&gt;개요&lt;a class="td-heading-self-link" href="#%ea%b0%9c%ec%9a%94" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;openwrt-sftp-keepass 구성.&lt;br&gt;&lt;/p&gt;
+&lt;h2 id="keepassconfigxml"&gt;KeePass.config.xml&lt;a class="td-heading-self-link" href="#keepassconfigxml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;pc 클라이언트 구성&lt;br&gt;
+c:\Users\dev\AppData\Roaming\KeePass\KeePass.config.xml&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;&amp;lt;DatabasePath&amp;gt;&lt;/span&gt;sftp://sj9n7air.duckdns.org:5****/usr/share/keepass/fhy8vp3u.kdbx&lt;span style="color:#81a1c1"&gt;&amp;lt;/DatabasePath&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;&amp;lt;KeyFilePath&amp;gt;&lt;/span&gt;..\..\Users\dev\AppData\Roaming\KeePass\fhy8vp3u.keyx&lt;span style="color:#81a1c1"&gt;&amp;lt;/KeyFilePath&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="openwrt-포트-개방"&gt;openwrt 포트 개방&lt;a class="td-heading-self-link" href="#openwrt-%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /etc/config/firewall
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code class="language-conf" data-lang="conf"&gt;...
+config redirect
+	option dest &amp;#39;lan&amp;#39;
+	option target &amp;#39;DNAT&amp;#39;
+	option name &amp;#39;agq3mbw2-ssh&amp;#39;
+	option src &amp;#39;wan&amp;#39;
+	option dest_port &amp;#39;22&amp;#39;
+	list proto &amp;#39;tcp&amp;#39;
+	option dest_ip &amp;#39;192.168.192.1&amp;#39;
+	option family &amp;#39;ipv4&amp;#39;
+	option src_dport &amp;#39;5****&amp;#39;
+...
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="openwrt-계정-추가"&gt;openwrt 계정 추가&lt;a class="td-heading-self-link" href="#openwrt-%ea%b3%84%ec%a0%95-%ec%b6%94%ea%b0%80" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;pc 클라이언트 dev 계정 추가&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;dev:x:1000:1000:dev:/home/dev:/bin/ash&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; /etc/passwd &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;dev:x:1000:dev&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; /etc/group &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;dev:19073:0:99999:7:::&amp;#34;&lt;/span&gt; &amp;gt;&amp;gt; /etc/shadow &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;passwd dev
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;_***************************************************************
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir -p /home/dev/.ssh &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;ssh-ed25519 A******************************************************************* agq3mbw2-eddsa-key-20230927
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; sudo tee /home/dev/.ssh/authorized_keys &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;chmod &lt;span style="color:#b48ead"&gt;755&lt;/span&gt; /home &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;chmod &lt;span style="color:#b48ead"&gt;755&lt;/span&gt; /home/dev &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;chmod &lt;span style="color:#b48ead"&gt;700&lt;/span&gt; /home/dev/.ssh &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;chmod &lt;span style="color:#b48ead"&gt;600&lt;/span&gt; /home/dev/.ssh/authorized_keys &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;chown -R dev:dev /home/dev
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;android 클라이언트 vscp5ekq 계정 추가&lt;/p&gt;</description></item></channel></rss>

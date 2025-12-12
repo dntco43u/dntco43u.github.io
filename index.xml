@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>잡다구리들 on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/</link><description>Recent content in 잡다구리들 on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>bdkqpr0x</title><link>https://dntco43u.github.io/dev/bdkqpr0x/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/bdkqpr0x/</guid><description>&lt;h2 id="작성-중"&gt;작성 중&lt;a class="td-heading-self-link" href="#%ec%9e%91%ec%84%b1-%ec%a4%91" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>잡다구리들 on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/</link><description>Recent content in 잡다구리들 on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>bdkqpr0x</title><link>https://dntco43u.github.io/dev/bdkqpr0x/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/bdkqpr0x/</guid><description>&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 id="bdkqpr0xsh"&gt;bdkqpr0x.sh &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#bdkqpr0xsh" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/bash
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# bdkqpr0x&lt;/span&gt;
@@ -30,7 +31,8 @@
 &lt;p&gt;&lt;a href="https://github.com/dntco43u/s6h7k8rv/blob/main/bdkqpr0x.sh"&gt;https://github.com/dntco43u/s6h7k8rv/blob/main/bdkqpr0x.sh&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description></item><item><title>inven-helper</title><link>https://dntco43u.github.io/dev/inven_helper/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/inven_helper/</guid><description>&lt;h2 id="작성-중"&gt;작성 중&lt;a class="td-heading-self-link" href="#%ec%9e%91%ec%84%b1-%ec%a4%91" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;</description></item><item><title>inven-helper</title><link>https://dntco43u.github.io/dev/inven_helper/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/inven_helper/</guid><description>&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 id="py_inven_helpersh"&gt;py_inven_helper.sh &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#py_inven_helpersh" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/bash
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# py_inven_helper&lt;/span&gt;
@@ -59,7 +61,8 @@
 &lt;p&gt;&lt;a href="https://github.com/dntco43u/s6h7k8rv/blob/main/py_inven_helper.sh"&gt;https://github.com/dntco43u/s6h7k8rv/blob/main/py_inven_helper.sh&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description></item><item><title>navergame-helper</title><link>https://dntco43u.github.io/dev/navergame_helper/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/navergame_helper/</guid><description>&lt;h2 id="작성-중"&gt;작성 중&lt;a class="td-heading-self-link" href="#%ec%9e%91%ec%84%b1-%ec%a4%91" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;</description></item><item><title>navergame-helper</title><link>https://dntco43u.github.io/dev/navergame_helper/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/navergame_helper/</guid><description>&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
+&lt;/div&gt;
 &lt;h2 id="py_navergame_helpersh"&gt;py_navergame_helper.sh &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#py_navergame_helpersh" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/bash
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# py_navergame_helper&lt;/span&gt;
@@ -88,7 +91,8 @@
 &lt;p&gt;&lt;a href="https://github.com/dntco43u/s6h7k8rv/blob/main/py_navergame_helper.sh"&gt;https://github.com/dntco43u/s6h7k8rv/blob/main/py_navergame_helper.sh&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description></item><item><title>tag-edit</title><link>https://dntco43u.github.io/dev/tag-edit/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/tag-edit/</guid><description>&lt;h2 id="작성-중"&gt;작성 중&lt;a class="td-heading-self-link" href="#%ec%9e%91%ec%84%b1-%ec%a4%91" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;</description></item><item><title>대용량 데이터베이스 솔루션 I</title><link>https://dntco43u.github.io/ref/database-solution-1/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/ref/database-solution-1/</guid><description>&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>tag-edit</title><link>https://dntco43u.github.io/dev/tag-edit/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/tag-edit/</guid><description>&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
+&lt;/div&gt;</description></item><item><title>대용량 데이터베이스 솔루션 I</title><link>https://dntco43u.github.io/ref/database-solution-1/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/ref/database-solution-1/</guid><description>&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
 &lt;/div&gt;</description></item><item><title>대용량 데이터베이스 솔루션 II</title><link>https://dntco43u.github.io/ref/database-solution-2/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/ref/database-solution-2/</guid><description>&lt;div class="alert alert-info" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
 &lt;/div&gt;</description></item><item><title>fail2ban</title><link>https://dntco43u.github.io/apps/fail2ban/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/fail2ban/</guid><description>&lt;h2 id="패키지-설치"&gt;패키지 설치&lt;a class="td-heading-self-link" href="#%ed%8c%a8%ed%82%a4%ec%a7%80-%ec%84%a4%ec%b9%98" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf install -y fail2ban whois
@@ -247,10 +251,10 @@ config redirect
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;chmod &lt;span style="color:#b48ead"&gt;700&lt;/span&gt; /home/dev/.ssh &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;chmod &lt;span style="color:#b48ead"&gt;600&lt;/span&gt; /home/dev/.ssh/authorized_keys &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;chown -R dev:dev /home/dev
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;android 클라이언트 vscp5ekq 계정 추가&lt;/p&gt;</description></item><item><title>med-exam</title><link>https://dntco43u.github.io/dev/med-exam/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/med-exam/</guid><description>&lt;h2 id="개요"&gt;개요&lt;a class="td-heading-self-link" href="#%ea%b0%9c%ec%9a%94" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;건강검진 및 생동성, 임상시험 피실험자에게 공개된 검사 데이터를 가공 후 시각화하고 AI들의 소견 출력. &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;h2 id="dockerfile"&gt;Dockerfile&lt;a class="td-heading-self-link" href="#dockerfile" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vi /opt/python/Dockerfile
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;android 클라이언트 vscp5ekq 계정 추가&lt;/p&gt;</description></item><item><title>med-exam</title><link>https://dntco43u.github.io/dev/med-exam/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/med-exam/</guid><description>&lt;h2 id="github"&gt;Github &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#github" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone git@github.com:dntco43u/med_exam.git
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="dockerfile"&gt;Dockerfile&lt;a class="td-heading-self-link" href="#dockerfile" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/python/Dockerfile
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-dockerfile" data-lang="dockerfile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;FROM&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;python:3-slim&lt;/span&gt;&lt;span style="color:#bf616a"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bf616a"&gt;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;ENV&lt;/span&gt; TZ&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;Asia/Seoul&lt;span style="color:#bf616a"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bf616a"&gt;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;RUN&lt;/span&gt; apt-get update &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
@@ -285,36 +289,8 @@ config redirect
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; e7hnr8ov/python:3-slim &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; python /opt/python/med_exam.py &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$@&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="troubleshooting"&gt;Troubleshooting&lt;a class="td-heading-self-link" href="#troubleshooting" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;python .ini 파일 처리 중 줄바꿈은 데이터에 적용되므로 CR/LF 관리.&lt;/li&gt;
-&lt;li&gt;python 패키지 google-trans-new 번역 불가.&lt;/li&gt;
-&lt;li&gt;python 패키지 g4f 프롬프트 1000자 제한. &lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;googletrans==4.0.0-rc1&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;10.38 The conflict is caused by:&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;10.38 googletrans 4.0.0rc1 depends on httpx==0.13.3&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;10.38 groq 0.11.0 depends on httpx&amp;lt;1 and &amp;gt;=0.23.0&lt;/code&gt;&lt;br&gt;
-python 패키지 googletrans와 groq간 버전 충돌.&lt;/li&gt;
-&lt;li&gt;python 패키지 psycopg2: &lt;code&gt;TypeError: not all arguments converted during string formatting&lt;/code&gt;&lt;br&gt;
-execute 파라미터 마지막에 &amp;ldquo;,&amp;rdquo; 추가.
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-py" data-lang="py"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cur&lt;span style="color:#81a1c1"&gt;.&lt;/span&gt;execute&lt;span style="color:#eceff4"&gt;(&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;DELETE FROM dev.medi_exam WHERE user_id = &lt;/span&gt;&lt;span style="color:#a3be8c"&gt;%s&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#eceff4"&gt;,&lt;/span&gt; &lt;span style="color:#eceff4"&gt;(&lt;/span&gt;row&lt;span style="color:#eceff4"&gt;[&lt;/span&gt;j&lt;span style="color:#eceff4"&gt;],))&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;python 패키지 psycopg2: &lt;code&gt;SQL Error [0A000]: ERROR: cannot use column reference in DEFAULT expression&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;ERROR: cannot use column reference in DEFAULT expression&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;ERROR: cannot use column reference in DEFAULT expression&lt;/code&gt;&lt;br&gt;
-컬럼 default값 &amp;lsquo;&amp;lsquo;로 변경&lt;/li&gt;
-&lt;li&gt;grafana 절사 오류. 소수점 정밀도 3 유지.
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sql" data-lang="sql"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;regexp_replace&lt;span style="color:#eceff4"&gt;(&lt;/span&gt;trunc&lt;span style="color:#eceff4"&gt;(&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;extract&lt;/span&gt;&lt;span style="color:#eceff4"&gt;(&lt;/span&gt;epoch &lt;span style="color:#81a1c1;font-weight:bold"&gt;FROM&lt;/span&gt; T1&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;exam_tm &lt;span style="color:#81a1c1"&gt;-&lt;/span&gt; drg_adm_tm&lt;span style="color:#eceff4"&gt;)&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;/&lt;/span&gt; &lt;span style="color:#eceff4"&gt;(&lt;/span&gt;&lt;span style="color:#b48ead"&gt;60&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;*&lt;/span&gt; &lt;span style="color:#b48ead"&gt;60&lt;/span&gt;&lt;span style="color:#eceff4"&gt;),&lt;/span&gt; &lt;span style="color:#b48ead"&gt;1&lt;/span&gt;&lt;span style="color:#eceff4"&gt;)::&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;TEXT&lt;/span&gt;&lt;span style="color:#eceff4"&gt;,&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#39;(^[0-9]+)(.0)&amp;#39;&lt;/span&gt;&lt;span style="color:#eceff4"&gt;,&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#39;\\1&amp;#39;&lt;/span&gt;&lt;span style="color:#eceff4"&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;grafana table에서 다른 컬럼값 사용.
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-json" data-lang="json"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bf616a"&gt;$&lt;/span&gt;&lt;span style="color:#eceff4"&gt;{&lt;/span&gt;&lt;span style="color:#bf616a"&gt;__data.fields[&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;&amp;#34;prod_link&amp;#34;&lt;/span&gt;&lt;span style="color:#bf616a"&gt;]&lt;/span&gt;&lt;span style="color:#eceff4"&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bf616a"&gt;$&lt;/span&gt;&lt;span style="color:#eceff4"&gt;{&lt;/span&gt;&lt;span style="color:#bf616a"&gt;__value.raw&lt;/span&gt;&lt;span style="color:#eceff4"&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="footnotes" role="doc-endnotes"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://github.com/dntco43u/med_exam"&gt;https://github.com/dntco43u/med_exam&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>postgresql</title><link>https://dntco43u.github.io/infra/postgresql/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/postgresql/</guid><description>&lt;h2 id="구성"&gt;구성&lt;a class="td-heading-self-link" href="#%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="alert alert-info" role="alert"&gt;
+&lt;p&gt;python 패키지 g4f 프롬프트 1000자 제한. &lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item><item><title>postgresql</title><link>https://dntco43u.github.io/infra/postgresql/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/postgresql/</guid><description>&lt;h2 id="구성"&gt;구성&lt;a class="td-heading-self-link" href="#%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;데이터베이스앱은 오버헤드, 자원 경쟁 방지를 위해 docker가 아닌 native로 설치.
 sslmode=require 외부 접속 개방하는 구성임.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo rm -rf /var/lib/pgsql &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
@@ -544,11 +520,50 @@ wsdd 3702/udp, 5357/tcp &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footno
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;send_tel_msg &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$TEL_BOT_KEY&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$TEL_CHAT_ID&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$msg_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rm &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$msg_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;구성 백업 &lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item><item><title>utils.sh</title><link>https://dntco43u.github.io/dev/utils-sh/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/utils-sh/</guid><description>&lt;h2 id="의존-패키지-설치"&gt;의존 패키지 설치&lt;a class="td-heading-self-link" href="#%ec%9d%98%ec%a1%b4-%ed%8c%a8%ed%82%a4%ec%a7%80-%ec%84%a4%ec%b9%98" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;RHEL&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf update &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo dnf install -y bc
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;openwrt&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;opkg update &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; opkg install bc coreutils-numfmt coreutils-date coreutils-stat
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="utilssh"&gt;utils.sh&lt;a class="td-heading-self-link" href="#utilssh" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+
+ 
+ 
+ 
+&lt;ul class="nav nav-tabs" id="tabs-0" role="tablist"&gt;
+ &lt;li class="nav-item"&gt;
+ &lt;button class="nav-link disabled"
+ id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+ aria-controls="tabs-00-00" aria-selected="false"&gt;
+ &lt;strong&gt;Distro&lt;/strong&gt;:
+ &lt;/button&gt;
+ &lt;/li&gt;&lt;li class="nav-item"&gt;
+ &lt;button class="nav-link active"
+ id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+ data-td-tp-persist="rhel" aria-controls="tabs-00-01" aria-selected="true"&gt;
+ RHEL
+ &lt;/button&gt;
+ &lt;/li&gt;&lt;li class="nav-item"&gt;
+ &lt;button class="nav-link"
+ id="tabs-00-02-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-02" role="tab"
+ data-td-tp-persist="openwrt" aria-controls="tabs-00-02" aria-selected="false"&gt;
+ openwrt
+ &lt;/button&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="tab-content" id="tabs-0-content"&gt;
+ &lt;div class="tab-body tab-pane fade"
+ id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0"&gt;
+ 
+ &lt;/div&gt;
+ &lt;div class="tab-body tab-pane fade show active"
+ id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0"&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf update &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo dnf install -y bc
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="tab-body tab-pane fade"
+ id="tabs-00-02" role="tabpanel" aria-labelled-by="tabs-00-02-tab" tabindex="0"&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;opkg update &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; opkg install bc coreutils-numfmt coreutils-date coreutils-stat
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h2 id="utilssh"&gt;utils.sh&lt;a class="td-heading-self-link" href="#utilssh" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/sh
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# 공통 함수&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# Dependency packages:&lt;/span&gt;
@@ -821,7 +836,7 @@ proxy_read_timeout 180s;
 ...
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id="teambition-webdav-구성"&gt;teambition webdav 구성&lt;a class="td-heading-self-link" href="#teambition-webdav-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;WebDAV 정책: 302 redirect vs. native proxy&lt;/div&gt;
-&lt;p&gt;현재 302 redirect, Use s3 upload method webdav 구성은 rclone과 잘하고 있음.&lt;/p&gt;</description></item><item><title>bash 환경 변수</title><link>https://dntco43u.github.io/infra/bash-profile/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/bash-profile/</guid><description>&lt;h2 id="bash-환경-변수-참조"&gt;bash 환경 변수 참조&lt;a class="td-heading-self-link" href="#bash-%ed%99%98%ea%b2%bd-%eb%b3%80%ec%88%98-%ec%b0%b8%ec%a1%b0" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;현재 302 redirect, Use s3 upload method webdav 구성은 rclone과 정상 작동합니다.&lt;/p&gt;</description></item><item><title>bash 환경 변수</title><link>https://dntco43u.github.io/infra/bash-profile/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/bash-profile/</guid><description>&lt;h2 id="bash-환경-변수-참조"&gt;bash 환경 변수 참조&lt;a class="td-heading-self-link" href="#bash-%ed%99%98%ea%b2%bd-%eb%b3%80%ec%88%98-%ec%b0%b8%ec%a1%b0" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;

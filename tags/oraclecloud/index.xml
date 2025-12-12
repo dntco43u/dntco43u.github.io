@@ -86,9 +86,6 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; sleep &lt;span style="color:#b48ead"&gt;10&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;done&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="troubleshooting"&gt;Troubleshooting&lt;a class="td-heading-self-link" href="#troubleshooting" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;&amp;quot;code&amp;quot;: &amp;quot;NotAuthorizedOrNotFound&amp;quot;,&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;&amp;quot;message&amp;quot;: &amp;quot;Authorization failed or requested resource not found.&amp;quot;&lt;/code&gt;&lt;br&gt;
-관리 web-ui에서 vcn 변경 여부 확인. .env에서 subnet id 확인.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;cd /opt/hugo/data/public &amp;amp;&amp;amp; git add . &amp;amp;&amp;amp; git commit -m &amp;ldquo;update&amp;rdquo; &amp;amp;&amp;amp; git push -u origin main;&lt;/p&gt;</description></item></channel></rss>
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;p&gt;&amp;ldquo;code&amp;rdquo;: &amp;ldquo;NotAuthorizedOrNotFound&amp;rdquo;,&lt;br&gt;
+&amp;ldquo;message&amp;rdquo;: &amp;ldquo;Authorization failed or requested resource not found.&amp;quot;&lt;br&gt;&lt;/p&gt;</description></item></channel></rss>

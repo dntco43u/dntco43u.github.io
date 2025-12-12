@@ -86,28 +86,29 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; sleep &lt;span style="color:#b48ead"&gt;10&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;done&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="troubleshooting"&gt;Troubleshooting&lt;a class="td-heading-self-link" href="#troubleshooting" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;&amp;quot;code&amp;quot;: &amp;quot;NotAuthorizedOrNotFound&amp;quot;,&lt;/code&gt;&lt;br&gt;
-&lt;code&gt;&amp;quot;message&amp;quot;: &amp;quot;Authorization failed or requested resource not found.&amp;quot;&lt;/code&gt;&lt;br&gt;
-관리 web-ui에서 vcn 변경 여부 확인. .env에서 subnet id 확인.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;cd /opt/hugo/data/public &amp;amp;&amp;amp; git add . &amp;amp;&amp;amp; git commit -m &amp;ldquo;update&amp;rdquo; &amp;amp;&amp;amp; git push -u origin main;&lt;/p&gt;</description></item><item><title>rockylinux 마이그레이션</title><link>https://dntco43u.github.io/etc/rockylinux-migration/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/etc/rockylinux-migration/</guid><description>&lt;h2 id="almalinux-9---rockylinux-9"&gt;AlmaLinux 9 -&amp;gt; rockylinux 9 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#almalinux-9---rockylinux-9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;p&gt;&amp;ldquo;code&amp;rdquo;: &amp;ldquo;NotAuthorizedOrNotFound&amp;rdquo;,&lt;br&gt;
+&amp;ldquo;message&amp;rdquo;: &amp;ldquo;Authorization failed or requested resource not found.&amp;quot;&lt;br&gt;&lt;/p&gt;</description></item><item><title>rockylinux 마이그레이션</title><link>https://dntco43u.github.io/etc/rockylinux-migration/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/etc/rockylinux-migration/</guid><description>&lt;h2 id="almalinux-8---rockylinux-8"&gt;AlmaLinux 8 -&amp;gt; rockylinux 8 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#almalinux-8---rockylinux-8" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo curl https://raw.githubusercontent.com/rocky-linux/rocky-tools/main/migrate2rocky/migrate2rocky.sh -o migrate2rocky.sh &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo chmod u+x migrate2rocky.sh &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo ./migrate2rocky.sh -r
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo reboot&lt;span style="color:#eceff4"&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cat /etc/*release*
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="footnotes" role="doc-endnotes"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://docs.rockylinux.org/10/guides/migrate2rocky/"&gt;https://docs.rockylinux.org/10/guides/migrate2rocky/&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li id="fn:2"&gt;
-&lt;p&gt;&lt;a href="https://github.com/rocky-linux/rocky-tools/tree/main/migrate2rocky"&gt;https://github.com/rocky-linux/rocky-tools/tree/main/migrate2rocky&lt;/a&gt;&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description></item><item><title>구형 nas geekbench</title><link>https://dntco43u.github.io/etc/low-performance-nas-benchmarks/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/etc/low-performance-nas-benchmarks/</guid><description>&lt;h2 id="설치-후"&gt;설치 후 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#%ec%84%a4%ec%b9%98-%ed%9b%84" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="troubleshooting"&gt;Troubleshooting&lt;a class="td-heading-self-link" href="#troubleshooting" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;p&gt;Problem 1: package linux-firmware-core-999:20220304-999.13.gitf011ccb4.el8.noarch conflicts with linux-firmware &amp;lt;= 999:20211203-999.10.gitb0e898fb.el8 provided by linux-firmware-20220210-107.git6342082c.el8.noarch&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;firmware 패키지 충돌. 문제 없음.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;p&gt;Problem 2: package tuned-profiles-oci-2.18.0-2.0.1.el8.noarch requires tuned = 2.18.0-2.0.1.el8, but none of the providers can be installed&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ecloud 관련 패키지 누락. 문제 없음.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;p&gt;Problem 3: package tuned-profiles-oci-2.18.0-2.0.1.el8.noarch requires tuned = 2.18.0-2.0.1.el8, but none of the providers can be installed&lt;/p&gt;</description></item><item><title>구형 nas geekbench</title><link>https://dntco43u.github.io/etc/low-performance-nas-benchmarks/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/etc/low-performance-nas-benchmarks/</guid><description>&lt;h2 id="설치-후"&gt;설치 후 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#%ec%84%a4%ec%b9%98-%ed%9b%84" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;table&gt;

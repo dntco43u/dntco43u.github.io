@@ -60,6 +60,5 @@ proxy_read_timeout 180s;
  proxy_pass http://alist:5244/dav;
  }
 ...
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="teambition-webdav-구성"&gt;teambition webdav 구성&lt;a class="td-heading-self-link" href="#teambition-webdav-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;WebDAV 정책: 302 redirect vs. native proxy&lt;/div&gt;
-&lt;p&gt;현재 302 redirect, Use s3 upload method webdav 구성은 rclone과 정상 작동합니다.&lt;/p&gt;</description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;WebDAV 정책: 302 redirect vs. native proxy&lt;/div&gt;
+&lt;p&gt;현재 teambition의 302 redirect, Use s3 upload method webdav 구성은 rclone과 정상 작동합니다.&lt;/p&gt;</description></item></channel></rss>

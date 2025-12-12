@@ -30,5 +30,5 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;dev&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;external&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;true&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="orgjdownloaderextensionseventscriptereventscripterextensionscriptsjson"&gt;org.jdownloader.extensions.eventscripter.EventScripterExtension.scripts.json&lt;a class="td-heading-self-link" href="#orgjdownloaderextensionseventscriptereventscripterextensionscriptsjson" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;자동 업데이트 시 갱신되지 않도록 읽기 전용 마운트.&lt;br&gt;
-다운로드 완료 후 telegram으로 알리고 모니터링 폴더로 이동.&lt;/p&gt;</description></item></channel></rss>
+&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;사용자 구성&lt;/div&gt;
+&lt;p&gt;다운로드 완료 후 telegram으로 알리고 rclone 모니터링 폴더로 이동시킨다.&lt;/p&gt;</description></item></channel></rss>

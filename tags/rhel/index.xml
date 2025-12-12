@@ -58,11 +58,42 @@ sslmode=require, 사설 인증서로 외부 접속 개방하는 구성.&lt;/p&gt
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo psql -U postgres -h 1**.****.**.** -p 5**** -d postgres
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="disk-mount-구성"&gt;disk mount 구성&lt;a class="td-heading-self-link" href="#disk-mount-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;db 최적화 xfs mount 구성&lt;/div&gt;
-&lt;p&gt;추천 구성은 &lt;code&gt;noatime,nodiratime,logbufs=8,logbsize=256k,allocsize=1m&lt;/code&gt;. 적용했지만 벤치마크 결과 속도 차이 없음.&lt;/p&gt;</description></item><item><title>bash 환경 변수</title><link>https://dntco43u.github.io/infra/bash-profile/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/bash-profile/</guid><description>&lt;h2 id="bash-환경-변수-참조"&gt;bash 환경 변수 참조&lt;a class="td-heading-self-link" href="#bash-%ed%99%98%ea%b2%bd-%eb%b3%80%ec%88%98-%ec%b0%b8%ec%a1%b0" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;추천 구성은 &lt;code&gt;noatime,nodiratime,logbufs=8,logbsize=256k,allocsize=1m&lt;/code&gt;. 적용했지만 벤치마크 결과 속도 차이 없음.&lt;/p&gt;</description></item><item><title>bash 환경 변수</title><link>https://dntco43u.github.io/infra/bash-profile/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/bash-profile/</guid><description>&lt;h2 id="비고"&gt;비고&lt;a class="td-heading-self-link" href="#%eb%b9%84%ea%b3%a0" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
- &lt;th&gt;&lt;/th&gt;
+ &lt;th&gt;Filename&lt;/th&gt;
+ &lt;th&gt;Remarks&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;/etc/environment&lt;/td&gt;
+ &lt;td&gt;모든 프로세스에 대해 기본 환경을 지정하는 변수를 정의. 로그인 시. profile이라는 로그인 프로파일을 읽기 전에 시스템은 /etc/environment 파일에서 환경 변수를 설정.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;/etc/profile, /etc/bashrc&lt;/td&gt;
+ &lt;td&gt;전체 사용자에게 적용.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;~/.bashrc, ~/.profile, ~/.bash_profile&lt;/td&gt;
+ &lt;td&gt;해당 사용자에게만 적용.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;/etc/profile, .profile&lt;/td&gt;
+ &lt;td&gt;shell이 bash가 아니라도 로그인하면 로드되어 적용되고. bashrc 와. bash_login, .bash_profile은 bash shell로 로그인 되었을 경우만 적용.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;~/.bash_logout&lt;/td&gt;
+ &lt;td&gt;로그인 shell이 로그아웃할 때 수행.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="대화비대화식-구분"&gt;대화/비대화식 구분&lt;a class="td-heading-self-link" href="#%eb%8c%80%ed%99%94%eb%b9%84%eb%8c%80%ed%99%94%ec%8b%9d-%ea%b5%ac%eb%b6%84" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Filename&lt;/th&gt;
  &lt;th&gt;Interactive login&lt;/th&gt;
  &lt;th&gt;Interactive non-login&lt;/th&gt;
  &lt;th&gt;Script&lt;/th&gt;
@@ -120,16 +151,7 @@ sslmode=require, 사설 인증서로 외부 접속 개방하는 구성.&lt;/p&gt
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id="실행-순서"&gt;실행 순서&lt;a class="td-heading-self-link" href="#%ec%8b%a4%ed%96%89-%ec%88%9c%ec%84%9c" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;bash 대화형 세션의 경우 다음 순서로 시작 파일을 검색.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;/etc/profile.d/xxx.sh&lt;/li&gt;
-&lt;li&gt;/etc/profile&lt;/li&gt;
-&lt;li&gt;/etc/bashrc&lt;/li&gt;
-&lt;li&gt;~/.bashrc&lt;/li&gt;
-&lt;li&gt;~/.bash_profile&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="bash_env"&gt;$BASH_ENV&lt;a class="td-heading-self-link" href="#bash_env" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;비대화식 쉘 스크립트가 실행하기 전에 구문 분석하는 파일의 경로 이름으로 설정.&lt;/p&gt;</description></item><item><title>vsftpd</title><link>https://dntco43u.github.io/infra/vsftpd/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/vsftpd/</guid><description>&lt;h2 id="포트-개방"&gt;포트 개방&lt;a class="td-heading-self-link" href="#%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;bash 대화형 세션의 경우 다음 순서로 시작 파일을 검색.&lt;/p&gt;</description></item><item><title>vsftpd</title><link>https://dntco43u.github.io/infra/vsftpd/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/vsftpd/</guid><description>&lt;h2 id="포트-개방"&gt;포트 개방&lt;a class="td-heading-self-link" href="#%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo firewall-cmd --permanent --add-forward-port&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;port&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;6****:proto&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;tcp:toport&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#b48ead"&gt;21&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo firewall-cmd --permanent --add-port&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;6****-6****/tcp &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo firewall-cmd --reload &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\

@@ -43,7 +43,7 @@
 &lt;div class="alert alert-info" role="alert"&gt;
 &lt;p&gt;python 패키지 g4f 프롬프트 1000자 제한. &lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item><item><title>postgresql</title><link>https://dntco43u.github.io/infra/postgresql/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/postgresql/</guid><description>&lt;h2 id="구성"&gt;구성&lt;a class="td-heading-self-link" href="#%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;사용자 구성&lt;/div&gt;
-&lt;p&gt;데이터베이스앱은 오버헤드, 자원 경쟁 방지를 위해 docker가 아닌 package로 설치합니다.&lt;br&gt;
+&lt;p&gt;데이터베이스 앱은 오버헤드, 자원 경쟁 방지를 위해 docker가 아닌 package로 설치합니다.&lt;br&gt;
 sslmode=require, 사설 인증서로 외부 접속 개방하는 구성.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo rm -rf /var/lib/pgsql &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\

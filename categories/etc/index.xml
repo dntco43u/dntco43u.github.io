@@ -104,7 +104,7 @@
 &lt;div class="alert alert-warning" role="alert"&gt;
 &lt;p&gt;Problem 2: package tuned-profiles-oci-2.18.0-2.0.1.el8.noarch requires tuned = 2.18.0-2.0.1.el8, but none of the providers can be installed&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;ecloud 관련 패키지 누락. 문제 없음.&lt;/p&gt;
+&lt;p&gt;oraclecloud 패키지 누락. 문제 없음.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;div class="alert alert-warning" role="alert"&gt;

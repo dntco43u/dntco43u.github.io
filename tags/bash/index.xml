@@ -32,7 +32,7 @@
  &lt;/div&gt;
  &lt;div class="tab-body tab-pane fade show active"
  id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0"&gt;
- &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf update &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo dnf install -y bc
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf -y update &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt;sudo dnf -y update sudo dnf update &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo dnf update &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo dnf install -y bc
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
  &lt;/div&gt;
  &lt;div class="tab-body tab-pane fade"
@@ -43,6 +43,49 @@
 &lt;/div&gt;
 
 &lt;h2 id="utilssh"&gt;utils.sh&lt;a class="td-heading-self-link" href="#utilssh" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+
+ 
+ 
+ 
+&lt;ul class="nav nav-tabs" id="tabs-1" role="tablist"&gt;
+ &lt;li class="nav-item"&gt;
+ &lt;button class="nav-link disabled"
+ id="tabs-01-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-01-00" role="tab"
+ aria-controls="tabs-01-00" aria-selected="false"&gt;
+ &lt;strong&gt;distro&lt;/strong&gt;
+ &lt;/button&gt;
+ &lt;/li&gt;&lt;li class="nav-item"&gt;
+ &lt;button class="nav-link active"
+ id="tabs-01-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-01-01" role="tab"
+ data-td-tp-persist="rhel" aria-controls="tabs-01-01" aria-selected="true"&gt;
+ RHEL
+ &lt;/button&gt;
+ &lt;/li&gt;&lt;li class="nav-item"&gt;
+ &lt;button class="nav-link"
+ id="tabs-01-02-tab" data-bs-toggle="tab" data-bs-target="#tabs-01-02" role="tab"
+ data-td-tp-persist="openwrt" aria-controls="tabs-01-02" aria-selected="false"&gt;
+ openwrt
+ &lt;/button&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="tab-content" id="tabs-1-content"&gt;
+ &lt;div class="tab-body tab-pane fade"
+ id="tabs-01-00" role="tabpanel" aria-labelled-by="tabs-01-00-tab" tabindex="1"&gt;
+ 
+ &lt;/div&gt;
+ &lt;div class="tab-body tab-pane fade show active"
+ id="tabs-01-01" role="tabpanel" aria-labelled-by="tabs-01-01-tab" tabindex="1"&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi ~/.local/bin/utils.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="tab-body tab-pane fade"
+ id="tabs-01-02" role="tabpanel" aria-labelled-by="tabs-01-02-tab" tabindex="1"&gt;
+ &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /usr/sbin/utils.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/sh
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# 공통 함수&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# Dependency packages:&lt;/span&gt;
@@ -230,7 +273,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; len&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$1&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; tr -dc A-Za-z0-9 &amp;lt;/dev/urandom &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; head -c &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$len&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>bash 환경 변수</title><link>https://dntco43u.github.io/infra/bash-profile/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/bash-profile/</guid><description>&lt;h2 id="비고"&gt;비고&lt;a class="td-heading-self-link" href="#%eb%b9%84%ea%b3%a0" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>bash</title><link>https://dntco43u.github.io/infra/bash/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/bash/</guid><description>&lt;h2 id="파일별-구분"&gt;파일별 구분&lt;a class="td-heading-self-link" href="#%ed%8c%8c%ec%9d%bc%eb%b3%84-%ea%b5%ac%eb%b6%84" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -261,66 +304,8 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id="대화비대화식-구분"&gt;대화/비대화식 구분&lt;a class="td-heading-self-link" href="#%eb%8c%80%ed%99%94%eb%b9%84%eb%8c%80%ed%99%94%ec%8b%9d-%ea%b5%ac%eb%b6%84" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;Filename&lt;/th&gt;
- &lt;th&gt;Interactive login&lt;/th&gt;
- &lt;th&gt;Interactive non-login&lt;/th&gt;
- &lt;th&gt;Script&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;/etc/profile&lt;/td&gt;
- &lt;td&gt;A&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;/etc/bash.bashrc&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;td&gt;A&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;~/.bashrc&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;td&gt;B&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;~/.bash_profile&lt;/td&gt;
- &lt;td&gt;B1&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;~/.bash_login&lt;/td&gt;
- &lt;td&gt;B2&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;~/.profile&lt;/td&gt;
- &lt;td&gt;B3&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;BASH_ENV&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;td&gt;A&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;~/.bash_logout&lt;/td&gt;
- &lt;td&gt;C&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;td&gt;&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id="실행-순서"&gt;실행 순서&lt;a class="td-heading-self-link" href="#%ec%8b%a4%ed%96%89-%ec%88%9c%ec%84%9c" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;bash 대화형 세션의 경우 다음 순서로 시작 파일을 검색.&lt;/p&gt;</description></item></channel></rss>
+&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;무엇을 하는지 알지 못하면 이 파일을 변경하는 것은 좋지 않습니다.&lt;br&gt;
+/etc/profile.d/에 custom.sh 셸 스크립트를 만들어 환경에 대한 사용자 지정 변경을 하는 것이 훨씬 좋습니다.&lt;br&gt;
+이렇게 하면 향후 업데이트에서 병합할 필요가 없습니다.&lt;/p&gt;</description></item></channel></rss>

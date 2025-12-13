@@ -1,10 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>openwrt on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/openwrt/</link><description>Recent content in openwrt on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/openwrt/index.xml" rel="self" type="application/rss+xml"/><item><title>keepass</title><link>https://dntco43u.github.io/infra/keepass/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/keepass/</guid><description>&lt;h2 id="windows-클라이언트-keepassconfigxml"&gt;windows 클라이언트 KeePass.config.xml&lt;a class="td-heading-self-link" href="#windows-%ed%81%b4%eb%9d%bc%ec%9d%b4%ec%96%b8%ed%8a%b8-keepassconfigxml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bat" data-lang="bat"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;%AppData%\KeePass\KeePass.config.xml
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;&amp;lt;DatabasePath&amp;gt;&lt;/span&gt;sftp://sj9n7air.duckdns.org:5****/usr/share/keepass/fhy8vp3u.kdbx&lt;span style="color:#81a1c1"&gt;&amp;lt;/DatabasePath&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;&amp;lt;KeyFilePath&amp;gt;&lt;/span&gt;..\..\Users\dev\AppData\Roaming\KeePass\fhy8vp3u.keyx&lt;span style="color:#81a1c1"&gt;&amp;lt;/KeyFilePath&amp;gt;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="openwrt-포트-개방"&gt;openwrt 포트 개방&lt;a class="td-heading-self-link" href="#openwrt-%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>openwrt on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/openwrt/</link><description>Recent content in openwrt on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/openwrt/index.xml" rel="self" type="application/rss+xml"/><item><title>keepass</title><link>https://dntco43u.github.io/infra/keepass/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/keepass/</guid><description>&lt;h2 id="openwrt-포트-개방"&gt;openwrt 포트 개방&lt;a class="td-heading-self-link" href="#openwrt-%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /etc/config/firewall
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code class="language-conf" data-lang="conf"&gt;...
 config redirect
@@ -29,19 +23,19 @@ config redirect
  &lt;button class="nav-link disabled"
  id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
  aria-controls="tabs-00-00" aria-selected="false"&gt;
- &lt;strong&gt;user&lt;/strong&gt;
+ &lt;strong&gt;client&lt;/strong&gt;
  &lt;/button&gt;
  &lt;/li&gt;&lt;li class="nav-item"&gt;
  &lt;button class="nav-link active"
  id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
- data-td-tp-persist="dev" aria-controls="tabs-00-01" aria-selected="true"&gt;
- dev
+ data-td-tp-persist="windows" aria-controls="tabs-00-01" aria-selected="true"&gt;
+ windows
  &lt;/button&gt;
  &lt;/li&gt;&lt;li class="nav-item"&gt;
  &lt;button class="nav-link"
  id="tabs-00-02-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-02" role="tab"
- data-td-tp-persist="vscp5ekq" aria-controls="tabs-00-02" aria-selected="false"&gt;
- vscp5ekq
+ data-td-tp-persist="android" aria-controls="tabs-00-02" aria-selected="false"&gt;
+ android
  &lt;/button&gt;
  &lt;/li&gt;
 &lt;/ul&gt;
@@ -130,11 +124,12 @@ config service &amp;#39;duckdns&amp;#39;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;chown dev:dev -R /usr/share/keepass &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;chmod &lt;span style="color:#b48ead"&gt;770&lt;/span&gt; /usr/share/keepass &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;chmod &lt;span style="color:#b48ead"&gt;660&lt;/span&gt; /usr/share/keepass/fhy8vp3u.kdbx
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="troubleshooting"&gt;Troubleshooting&lt;a class="td-heading-self-link" href="#troubleshooting" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="alert alert-warning" role="alert"&gt;
-&lt;p&gt;android 버전은 ssh키를 앱에서 관리하고 외부키를 사용할 수 없음. &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item><item><title>netbootxyz</title><link>https://dntco43u.github.io/apps/netbootxyz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/netbootxyz/</guid><description>&lt;h2 id="포트-개방"&gt;포트 개방&lt;a class="td-heading-self-link" href="#%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;tftp: 69번 포트&lt;br&gt;
-dhcp: 67번 포트(server, relay agent), 68번 포트(client) &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="클라이언트-구성"&gt;클라이언트 구성&lt;a class="td-heading-self-link" href="#%ed%81%b4%eb%9d%bc%ec%9d%b4%ec%96%b8%ed%8a%b8-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;windows 클라이언트 KeePass.config.xml&lt;/p&gt;</description></item><item><title>netbootxyz</title><link>https://dntco43u.github.io/apps/netbootxyz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/netbootxyz/</guid><description>&lt;h2 id="포트-개방"&gt;포트 개방&lt;a class="td-heading-self-link" href="#%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;tftp: 69번 포트&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;dhcp: 67번 포트(server, relay agent), 68번 포트(client) &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cat /usr/lib/firewalld/services/dhcp.xml &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; grep port &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;cat /usr/lib/firewalld/services/tftp.xml &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; grep port
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;port protocol&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;udp&amp;#34;&lt;/span&gt; port&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;67&amp;#34;&lt;/span&gt;/&amp;gt;
@@ -192,5 +187,4 @@ dhcp: 67번 포트(server, relay agent), 68번 포트(client) &lt;sup id="fnref:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;set github_user dntco43u&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;...&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="menuipxe"&gt;menu.ipxe&lt;a class="td-heading-self-link" href="#menuipxe" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;사용자 구성&lt;/div&gt;
-&lt;p&gt;Lenovo Diagnostics UEFI, Hirens BootCD PE, Macrium Reflect 멀티 부팅 &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;멀티 부팅 &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item></channel></rss>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>postgresql on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/postgresql/</link><description>Recent content in postgresql on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>tag-edit</title><link>https://dntco43u.github.io/dev/tag-edit/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/tag-edit/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
 &lt;/div&gt;</description></item><item><title>med-exam</title><link>https://dntco43u.github.io/dev/med-exam/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/med-exam/</guid><description>&lt;h2 id="데모-페이지"&gt;데모 페이지 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#%eb%8d%b0%eb%aa%a8-%ed%8e%98%ec%9d%b4%ec%a7%80" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://gr.gvp6nx1a.duckdns.org/d/fdyt7rjk3owzkd/med-exam?orgId=1"&gt;데모 페이지 1&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://agknwpt3.grafana.net/d/fdyt7rjk3owzkd/med-exam?orgId=1&amp;amp;from=2024-07-23T15:00:00.000Z&amp;amp;to=2024-09-09T14:59:59.000Z&amp;amp;timezone=Asia%2FSeoul&amp;amp;var-usr_id=9VFsW2u8mIqFXMlG7f6irg%3D%3D&amp;amp;var-exam_type_cd=002&amp;amp;var-exam_id=RT51KR-PK01&amp;amp;var-rslt_ymd=$__all&amp;amp;var-exam_a_gb_cd=$__all&amp;amp;var-grdng_cd=$__all&amp;amp;var-exam_b_gb_cd=$__all&amp;amp;var-ai_model=$__all"&gt;데모 페이지 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gr.gvp6nx1a.duckdns.org/d/fdyt7rjk3owzkd/med-exam?orgId=1"&gt;바로 가기 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://agknwpt3.grafana.net/d/fdyt7rjk3owzkd/med-exam?orgId=1&amp;amp;from=2024-07-23T15:00:00.000Z&amp;amp;to=2024-09-09T14:59:59.000Z&amp;amp;timezone=Asia%2FSeoul&amp;amp;var-usr_id=9VFsW2u8mIqFXMlG7f6irg%3D%3D&amp;amp;var-exam_type_cd=002&amp;amp;var-exam_id=RT51KR-PK01&amp;amp;var-rslt_ymd=$__all&amp;amp;var-exam_a_gb_cd=$__all&amp;amp;var-grdng_cd=$__all&amp;amp;var-exam_b_gb_cd=$__all&amp;amp;var-ai_model=$__all"&gt;바로 가기 2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;img src="../med-exam-1.webp" alt="image"&gt;&lt;/p&gt;
 &lt;h2 id="dockerfile"&gt;Dockerfile&lt;a class="td-heading-self-link" href="#dockerfile" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/python/Dockerfile
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-dockerfile" data-lang="dockerfile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;FROM&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;python:3-slim&lt;/span&gt;&lt;span style="color:#bf616a"&gt;
@@ -23,7 +24,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; rm -rf /var/lib/apt/lists/*&lt;span style="color:#bf616a"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker build -t e7hnr8ov/python:3-slim /opt/python
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="py_med_examsh"&gt;py_med_exam.sh &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#py_med_examsh" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/bash
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi ~/.local/bin/py_med_exam.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/bash
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# py_med_exam&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;source&lt;/span&gt; /home/dev/.bashrc
@@ -41,12 +43,11 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; python /opt/python/med_exam.py &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$@&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="troubleshooting"&gt;Troubleshooting&lt;a class="td-heading-self-link" href="#troubleshooting" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="alert alert-info" role="alert"&gt;
+&lt;blockquote&gt;
 &lt;p&gt;python 패키지 g4f 프롬프트 1000자 제한. &lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item><item><title>postgresql</title><link>https://dntco43u.github.io/infra/postgresql/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/postgresql/</guid><description>&lt;h2 id="구성"&gt;구성&lt;a class="td-heading-self-link" href="#%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;사용자 구성&lt;/div&gt;
-&lt;p&gt;데이터베이스 앱은 오버헤드, 자원 경쟁 방지를 위해 docker가 아닌 package로 설치합니다.&lt;br&gt;
-sslmode=require, 사설 인증서로 외부 접속 개방하는 구성.&lt;/p&gt;
-&lt;/div&gt;
+&lt;p&gt;사설 인증서로 외부 접속 개방하는 구성.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo rm -rf /var/lib/pgsql &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo dnf -y update &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo dnf module remove -y postgresql:16/server &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo dnf module install -y postgresql:16/server &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo postgresql-setup --initdb
@@ -92,5 +93,13 @@ sslmode=require, 사설 인증서로 외부 접속 개방하는 구성.&lt;/p&gt
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo mv /usr/share/pki/ca-trust-source/anchors/server.key /var/lib/pgsql/server.key &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo chown postgres:postgres /var/lib/pgsql/server.crt &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo chown postgres:postgres /var/lib/pgsql/server.key
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;db 최적화 xfs mount 구성&lt;/div&gt;
-&lt;p&gt;추천 구성은 &lt;code&gt;noatime,nodiratime,logbufs=8,logbsize=256k,allocsize=1m&lt;/code&gt;. 적용했지만 벤치마크 결과 속도 차이 없음.&lt;/p&gt;</description></item></channel></rss>
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;기본적으로 유일한 방법은 FAQ에 설명 된대로 &amp;ldquo;allocsize&amp;quot;마운트 옵션을 사용하는 것입니다.
+InnoDB는 최대 16kB의 64페이지를 읽으므로 &amp;ldquo;allocsize=1M&amp;quot;이 가장 좋습니다.
+고객과 마찬가지로 많은 DBA 또는 시스템 관리자도 이러한 동작을 인식하지 못할 수 있으며 실행 중인 시스템에서만 감지할 수 있습니다.
+슬프게도, 나는 그것이 효과가 없었다고 말해야합니다. 미리 할당 된 공간의 크기는 원래 실행에서와 같이 계속 커졌습니다.
+더 나쁜 것은이 명령을 실행 한 후 시작한 실행에도 영향을 미치지 않았다는 것입니다.
+이는 마운트된 XFS 파일 시스템에 대해 &amp;ldquo;allocsize&amp;rdquo; 값을 변경할 수 없으며, 마운트 시 해당 값이 마운트 해제될 때까지 유효하다는 것을 증명합니다.
+마운트 해제 한 다음 새로 마운트하여 &amp;ldquo;allocsize = 1M&amp;quot;을 제공 할 때만 고정 크기가 사전 할당 금액으로 표시되었습니다.
+DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료를 피할 수 없음을 의미합니다. (물론 Galera 클러스터에 대해 이야기하면 노드를 한 번에 하나씩 처리 할 수 있기 때문에 시스템을 계속 사용할 수 있습니다.)&lt;/p&gt;</description></item></channel></rss>

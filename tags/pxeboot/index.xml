@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pxeboot on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/pxeboot/</link><description>Recent content in pxeboot on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><atom:link href="https://dntco43u.github.io/tags/pxeboot/index.xml" rel="self" type="application/rss+xml"/><item><title>netbootxyz</title><link>https://dntco43u.github.io/apps/netbootxyz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/netbootxyz/</guid><description>&lt;h2 id="포트-개방"&gt;포트 개방&lt;a class="td-heading-self-link" href="#%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;tftp: 69번 포트&lt;br&gt;
-dhcp: 67번 포트(server, relay agent), 68번 포트(client) &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;br&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;tftp: 69번 포트&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;dhcp: 67번 포트(server, relay agent), 68번 포트(client) &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cat /usr/lib/firewalld/services/dhcp.xml &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; grep port &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;cat /usr/lib/firewalld/services/tftp.xml &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; grep port
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &amp;lt;port protocol&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;udp&amp;#34;&lt;/span&gt; port&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;67&amp;#34;&lt;/span&gt;/&amp;gt;
@@ -58,5 +60,4 @@ dhcp: 67번 포트(server, relay agent), 68번 포트(client) &lt;sup id="fnref:
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;set github_user dntco43u&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;...&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="menuipxe"&gt;menu.ipxe&lt;a class="td-heading-self-link" href="#menuipxe" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;사용자 구성&lt;/div&gt;
-&lt;p&gt;Lenovo Diagnostics UEFI, Hirens BootCD PE, Macrium Reflect 멀티 부팅 &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;멀티 부팅 &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item></channel></rss>

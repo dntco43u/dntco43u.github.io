@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>개발환경 on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/infra/</link><description>Recent content in 개발환경 on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/infra/index.xml" rel="self" type="application/rss+xml"/><item><title>doublecmd</title><link>https://dntco43u.github.io/infra/doublecmd/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/doublecmd/</guid><description>&lt;h2 id="구성"&gt;구성&lt;a class="td-heading-self-link" href="#%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Mdir 참조 색상, 기타 구성. &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Mdir 참조 색상, 기타 구성. &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; D2Coding 의존.&lt;/p&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -30,7 +30,8 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;a href="../doublecmd-settings.zip"&gt;doublecmd-settings.zip&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="../doublecmd-settings.zip"&gt;doublecmd-settings.zip&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://github.com/naver/d2codingfont/releases/download/VER1.3.2/D2Coding-Ver1.3.2-20180524.zip"&gt;D2Coding-Ver1.3.2-20180524.zip&lt;/a&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl https://dntco43u.github.io/infra/doublecmd-settings.zip -o $USERPROFILE/Downloads/doublecmd-settings.zip &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;7z x -y -o&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$APPDATA&lt;span style="color:#a3be8c"&gt;/doublecmd&amp;#34;&lt;/span&gt; $USERPROFILE/Downloads/doublecmd-settings.zip &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;rm $USERPROFILE/Downloads/doublecmd-settings.zip
@@ -41,8 +42,34 @@
 &lt;p&gt;&lt;a href="https://doublecmd.github.io/doc/en/configuration.html"&gt;https://doublecmd.github.io/doc/en/configuration.html&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;/div&gt;</description></item><item><title>putty</title><link>https://dntco43u.github.io/infra/putty/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/putty/</guid><description>&lt;h2 id="구성"&gt;구성&lt;a class="td-heading-self-link" href="#%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;색상 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;, 기타 구성된 템플릿 세션을 생성.&lt;/p&gt;
+&lt;/div&gt;</description></item><item><title>klogg</title><link>https://dntco43u.github.io/infra/klogg/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/klogg/</guid><description>&lt;h2 id="구성"&gt;구성&lt;a class="td-heading-self-link" href="#%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;레벨별 색상 구성. D2Coding 의존.&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*TRACE|DEBUG
+d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*INFO|NOTICE
+d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*WARN
+d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*ERROR|SEVERE|CRITICAL
+&lt;/code&gt;&lt;/pre&gt;&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Filename&lt;/th&gt;
+ &lt;th&gt;Remarks&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;klogg.conf&lt;/td&gt;
+ &lt;td&gt;구성&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href="../klogg-settings.zip"&gt;klogg-settings.zip&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://github.com/naver/d2codingfont/releases/download/VER1.3.2/D2Coding-Ver1.3.2-20180524.zip"&gt;D2Coding-Ver1.3.2-20180524.zip&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl https://dntco43u.github.io/infra/klogg-settings.zip -o $USERPROFILE/Downloads/klogg-settings.zip &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;7z x -y -o&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$USERPROFILE&lt;span style="color:#a3be8c"&gt;/Downloads&amp;#34;&lt;/span&gt; $USERPROFILE/Downloads/klogg-settings.zip &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;mv $USERPROFILE/Downloads/klogg.conf $PROGRAMFILES/klogg &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;rm $USERPROFILE/Downloads/klogg-settings.zip
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>putty</title><link>https://dntco43u.github.io/infra/putty/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/putty/</guid><description>&lt;h2 id="구성"&gt;구성&lt;a class="td-heading-self-link" href="#%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;색상 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;, 기타 구성된 템플릿 세션을 생성. D2Coding 의존.&lt;/p&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -57,7 +84,8 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;a href="../putty-sessions.zip"&gt;putty-sessions.zip&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="../putty-sessions.zip"&gt;putty-sessions.zip&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://github.com/naver/d2codingfont/releases/download/VER1.3.2/D2Coding-Ver1.3.2-20180524.zip"&gt;D2Coding-Ver1.3.2-20180524.zip&lt;/a&gt;&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl https://dntco43u.github.io/infra/putty-sessions.zip -o $USERPROFILE/Downloads/putty-sessions.zip &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;7z x -y -o&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$USERPROFILE&lt;span style="color:#a3be8c"&gt;/Downloads&amp;#34;&lt;/span&gt; $USERPROFILE/Downloads/putty-sessions.zip &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;reg import $USERPROFILE/Downloads/putty-sessions.reg &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\

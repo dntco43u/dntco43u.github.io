@@ -133,7 +133,7 @@
  proxy_pass http://hugo:1313;
  }
 ...
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="웹사이트-색인-등록"&gt;웹사이트 색인 등록&lt;a class="td-heading-self-link" href="#%ec%9b%b9%ec%82%ac%ec%9d%b4%ed%8a%b8-%ec%83%89%ec%9d%b8-%eb%93%b1%eb%a1%9d" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="웹사이트-색인-등록"&gt;웹사이트 색인 등록&lt;a class="td-heading-self-link" href="#%ec%9b%b9%ec%82%ac%ec%9d%b4%ed%8a%b8-%ec%83%89%ec%9d%b8-%eb%93%b1%eb%a1%9d" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://search.google.com/search-console"&gt;Google Search Console&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://searchadvisor.naver.com/"&gt;네이버 서치 어드바이저&lt;/a&gt;&lt;/li&gt;

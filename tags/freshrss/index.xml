@@ -21,4 +21,44 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;networks&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;dev&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;external&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="logrotate"&gt;logrotate&lt;a class="td-heading-self-link" href="#logrotate" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;이 app은 abc 계정(911:911)이 통제하지만, logrotate는 root(0:0) 계정만이 통제하므로 logrotate 재구성을 docker 외부에 mount 한다.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker &lt;span style="color:#81a1c1"&gt;exec&lt;/span&gt; -it freshrss id &lt;span style="color:#b48ead"&gt;911&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo docker cp freshrss:/etc/logrotate.d/nginx /home/dev/docker/freshrss/logrotate/logrotate_nginx.conf &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo docker cp freshrss:/etc/logrotate.d/php-fpm /home/dev/docker/freshrss/logrotate/logrotate_php-fpm.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;uid=911(abc) gid=911(abc) groups=911(abc),1000(users)
+&lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vi /opt/freshrss/config/logrotate_nginx.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;/config/log/nginx/*.log {
+ daily
+ rotate 7
+ missingok
+ notifempty
+ dateext
+ dateyesterday
+ dateformat -%Y%m%d
+ sharedscripts
+ postrotate
+ s6-svc -r /run/service/svc-nginx
+ endscript
+ su abc abc
+ nocompress
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vi /opt/freshrss/config/logrotate_php-fpm.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;/config/log/php/*.log {
+ daily
+ rotate 7
+ missingok
+ notifempty
+ dateext
+ dateyesterday
+ dateformat -%Y%m%d
+ sharedscripts
+ postrotate
+ s6-svc -r /run/service/svc-php-fpm
+ endscript
+ su abc abc
+ nocompress
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker &lt;span style="color:#81a1c1"&gt;exec&lt;/span&gt; -it freshrss logrotate -v /etc/logrotate.d/nginx &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;docker &lt;span style="color:#81a1c1"&gt;exec&lt;/span&gt; -it freshrss logrotate -v /etc/logrotate.d/php-fpm
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item></channel></rss>

@@ -49,4 +49,4 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;&amp;lt;/&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;head&lt;/span&gt;&lt;span style="color:#eceff4"&gt;&amp;gt;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="log-구성"&gt;log 구성&lt;a class="td-heading-self-link" href="#log-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;이 app은 log를 날짜별 디렉토리로 쌓는다. 일일 스케줄링되는 &lt;a href="https://dntco43u.github.io/infra/rhel9/#crond"&gt;cleanup_disk.sh&lt;/a&gt;에서 0일 이후 로그 삭제.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;이 app은 log를 yyyymmdd 형식의 디렉토리에 쌓는다. 일일 스케줄링되는 &lt;a href="https://dntco43u.github.io/infra/rhel9/#crond"&gt;cleanup_disk.sh&lt;/a&gt;에서 0일 이후 로그 삭제.&lt;/p&gt;</description></item></channel></rss>

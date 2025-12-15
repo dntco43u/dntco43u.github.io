@@ -850,7 +850,9 @@ DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료
 &lt;p&gt;서비스 데이터를 /home에 저장하는 것을 좋아하지 않습니다. 많은 사람들이 Docker를 사용하지만 그 이유를 이해할 수 없습니다.&lt;br&gt;
 그것에 대해 특별히 나쁜 것은 없으며, 데이터베이스를 / etc에 저장하는 것과 같은 지저분한 imho입니다. :-)&lt;br&gt;
 /srv 는 응용 프로그램 / 서비스 데이터를 저장하기 위한 것이므로 사용합니다.&lt;br&gt;
-/opt는 원래 많은 상용 공급업체에서 시스템 파일과 혼합되지 않은 장소에 앱/데이터를 설치하기 위해 사용하는 오래된 표준입니다.&lt;/p&gt;</description></item><item><title>grafana</title><link>https://dntco43u.github.io/infra/grafana/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/grafana/</guid><description>&lt;h2 id="데모-페이지"&gt;데모 페이지&lt;a class="td-heading-self-link" href="#%eb%8d%b0%eb%aa%a8-%ed%8e%98%ec%9d%b4%ec%a7%80" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+/opt는 원래 많은 상용 공급업체에서 시스템 파일과 혼합되지 않은 장소에 앱/데이터를 설치하기 위해 사용하는 오래된 표준입니다.&lt;/p&gt;</description></item><item><title>grafana</title><link>https://dntco43u.github.io/infra/grafana/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/grafana/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id="데모-페이지"&gt;데모 페이지&lt;a class="td-heading-self-link" href="#%eb%8d%b0%eb%aa%a8-%ed%8e%98%ec%9d%b4%ec%a7%80" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://gr.gvp6nx1a.duckdns.org/d/T512JVH7a/nginx?orgId=1"&gt;nginx 바로 가기&lt;/a&gt; &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="../grafana-1.webp" alt="This is an image"&gt;&lt;/p&gt;
 &lt;h2 id="데모-페이지-1"&gt;데모 페이지&lt;a class="td-heading-self-link" href="#%eb%8d%b0%eb%aa%a8-%ed%8e%98%ec%9d%b4%ec%a7%80-1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
@@ -908,7 +910,9 @@ DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="troubleshooting"&gt;Troubleshooting&lt;a class="td-heading-self-link" href="#troubleshooting" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="alert alert-info" role="alert"&gt;
 &lt;blockquote&gt;
-&lt;p&gt;postgresql where 절 동적 sql 적용.&lt;/p&gt;</description></item><item><title>nginx</title><link>https://dntco43u.github.io/infra/nginx/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/nginx/</guid><description>&lt;h2 id="포트-개방"&gt;포트 개방&lt;a class="td-heading-self-link" href="#%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;postgresql where 절 동적 sql 적용.&lt;/p&gt;</description></item><item><title>nginx</title><link>https://dntco43u.github.io/infra/nginx/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/nginx/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id="포트-개방"&gt;포트 개방&lt;a class="td-heading-self-link" href="#%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo firewall-cmd --permanent --add-port&lt;span style="color:#81a1c1"&gt;={&lt;/span&gt;80,443&lt;span style="color:#81a1c1"&gt;}&lt;/span&gt;/tcp &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo firewall-cmd --reload &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo firewall-cmd --list-all

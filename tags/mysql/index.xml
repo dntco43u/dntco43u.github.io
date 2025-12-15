@@ -24,11 +24,24 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;tail -n3 &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$log_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; head -n1 &amp;gt;&amp;gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$msg_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#616e87;font-style:italic"&gt;#show count&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;send_tel_msg &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$TEL_BOT_KEY&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$TEL_CHAT_ID&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$msg_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rm &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$msg_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="logrotate"&gt;logrotate&lt;a class="td-heading-self-link" href="#logrotate" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vi /etc/logrotate.d/bdkqpr0x
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;/opt/bdkqpr0x/log/*.log {
+ daily
+ rotate 7
+ missingok
+ notifempty
+ dateext
+ dateyesterday
+ dateformat -%Y%m%d
+ create 0664 dev dev
+ sharedscripts
+ postrotate
+ docker restart promtail &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 || true
+ endscript
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;div class="footnotes" role="doc-endnotes"&gt;
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://github.com/dntco43u/s6h7k8rv/blob/main/bdkqpr0x.sh"&gt;https://github.com/dntco43u/s6h7k8rv/blob/main/bdkqpr0x.sh&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/s6h7k8rv/blob/main/bdkqpr0x.sh"&gt;https://github.com/dntco43u/s6h7k8rv/blob/main/bdkqpr0x.sh&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>freshrss on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/freshrss/</link><description>Recent content in freshrss on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/freshrss/index.xml" rel="self" type="application/rss+xml"/><item><title>freshrss</title><link>https://dntco43u.github.io/apps/freshrss/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/freshrss/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/freshrss/docker-compose.yml
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yml" data-lang="yml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;services&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;freshrss&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;image&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; linuxserver/freshrss:latest
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;container_name&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; freshrss
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;networks&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - dev
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;ports&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#b48ead"&gt;80&lt;/span&gt;/tcp
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;user&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#b48ead"&gt;0&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;&lt;span style="color:#b48ead"&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;environment&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - PUID=911
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - PGID=911
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - TZ=Asia/Seoul
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;volumes&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - /opt/freshrss/data:/config:rw
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - /opt/freshrss/config/logrotate_nginx.conf:/etc/logrotate.d/nginx:ro
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - /opt/freshrss/config/logrotate_php-fpm.conf:/etc/logrotate.d/php-fpm:ro
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;restart&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; unless-stopped
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;networks&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;dev&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;external&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="logrotate"&gt;logrotate&lt;a class="td-heading-self-link" href="#logrotate" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;app은 abc 계정(911:911)이 실행하지만 logrotate는 root(0:0) 계정이 실행&lt;br&gt;
+logrotate 재구성을 위해 host에 mount&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker &lt;span style="color:#81a1c1"&gt;exec&lt;/span&gt; -it freshrss id &lt;span style="color:#b48ead"&gt;911&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo docker cp freshrss:/etc/logrotate.d/nginx /home/dev/docker/freshrss/logrotate/logrotate_nginx.conf &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo docker cp freshrss:/etc/logrotate.d/php-fpm /home/dev/docker/freshrss/logrotate/logrotate_php-fpm.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;uid=911(abc) gid=911(abc) groups=911(abc),1000(users)
+&lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vi /opt/freshrss/config/logrotate_nginx.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;/config/log/nginx/*.log {
+ daily
+ rotate 7
+ missingok
+ notifempty
+ dateext
+ dateyesterday
+ dateformat -%Y%m%d
+ sharedscripts
+ postrotate
+ s6-svc -r /run/service/svc-nginx
+ endscript
+ su abc abc
+ nocompress
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vi /opt/freshrss/config/logrotate_php-fpm.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;/config/log/php/*.log {
+ daily
+ rotate 7
+ missingok
+ notifempty
+ dateext
+ dateyesterday
+ dateformat -%Y%m%d
+ sharedscripts
+ postrotate
+ s6-svc -r /run/service/svc-php-fpm
+ endscript
+ su abc abc
+ nocompress
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker &lt;span style="color:#81a1c1"&gt;exec&lt;/span&gt; -it freshrss logrotate -v /etc/logrotate.d/nginx &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;docker &lt;span style="color:#81a1c1"&gt;exec&lt;/span&gt; -it freshrss logrotate -v /etc/logrotate.d/php-fpm
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="proxy-구성"&gt;proxy 구성&lt;a class="td-heading-self-link" href="#proxy-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/nginx/config/sites-available/freshrss.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;...
+ location / {
+ if ($allowed_country = no) {
+ return 403;
+ }
+ include /etc/nginx/conf.d/include/proxy.conf;
+ proxy_pass http://freshrss:80;
+ }
+...
+&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>

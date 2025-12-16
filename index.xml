@@ -1280,11 +1280,13 @@ d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*ERROR|SEVERE|CRITICAL
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;</description></item><item><title>xray</title><link>https://dntco43u.github.io/apps/xray/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/xray/</guid><description>&lt;pre class="mermaid"&gt;graph LR
- A[client] -- https 방화벽 차단 --&amp;gt; B[firewall]
- A[client] -- vless&amp;#43;websocket --&amp;gt; B[firewall]
- B -- vless&amp;#43;websocket --&amp;gt; G[nginix]
- G -- vless&amp;#43;websocket --&amp;gt; I[v2ray]
- I --&amp;gt; L[internet]&lt;/pre&gt;
+ subgraph 443/tcp
+ A[client] -- https 차단 --- B[firewall]
+ A1[client] &amp;lt;-- vless&amp;#43;ws 우회 --&amp;gt; B
+ end
+ B &amp;lt;-- vless&amp;#43;ws 우회 --&amp;gt; G[nginx-proxy]
+ G &amp;lt;--&amp;gt; I[xray]
+ I &amp;lt;-- https 요청/응답 --&amp;gt; L[internet]&lt;/pre&gt;
 &lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/xray/docker-compose.yml
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yml" data-lang="yml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;services&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;

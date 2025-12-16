@@ -483,7 +483,6 @@ logrotate 재구성을 위해 host에 mount&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - /mnt/tsdfsvkx-gdrive/documents:/tsdfsvkx:rw
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - /mnt/aqn8dtkh-gdrive/documents:/aqn8dtkh:rw
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - /mnt/gvp6nx1a-alist/ndgzbj1c@teambition/documents:/ndgzbj1c:rw
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - /mnt/gvp6nx1a-alist/ndgzbj1c@teambition/xxx:/xxx:rw
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;restart&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; unless-stopped
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;networks&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;dev&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;

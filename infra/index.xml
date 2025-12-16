@@ -1251,7 +1251,7 @@ DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo cp /etc/vsftpd/vsftpd.conf /etc/vsftpd/vsftpd.conf.bak &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo cp /etc/vsftpd/ftpusers /etc/vsftpd/ftpusers.bak
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;root 접속 허용. (optional)&lt;/p&gt;</description></item><item><title>wireguard</title><link>https://dntco43u.github.io/infra/wireguard/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/wireguard/</guid><description>&lt;pre class="mermaid"&gt;graph LR
- subgraph firewall
+ subgraph iptables
  subgraph docker-bridge-network
  A1[docker/wireguard] &amp;lt;--&amp;gt; B[docker]
  A2[container] &amp;lt;--&amp;gt; B

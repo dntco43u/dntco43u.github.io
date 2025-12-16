@@ -2288,10 +2288,7 @@ proxy_read_timeout 180s;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
  &lt;/div&gt;
 &lt;/div&gt;
-&lt;/p&gt;</description></item><item><title>wireguard</title><link>https://dntco43u.github.io/infra/wireguard/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/wireguard/</guid><description>&lt;pre class="mermaid"&gt;---
-title: docker bridge에 있는 container에 접근할 수 있게 동일 bridge에 wireguard 구성
----
-graph LR
+&lt;/p&gt;</description></item><item><title>wireguard</title><link>https://dntco43u.github.io/infra/wireguard/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/wireguard/</guid><description>&lt;pre class="mermaid"&gt;graph LR
  subgraph firewall
  subgraph docker-bridge-network
  A1[docker/wireguard] &amp;lt;--&amp;gt; B[docker]
@@ -2303,7 +2300,8 @@ graph LR
  end
  end
  A1 &amp;lt;-- udp --&amp;gt; D[client]
- C1 &amp;lt;-- udp --&amp;gt; D&lt;/pre&gt;
+ C1 &amp;lt;-- udp --&amp;gt; D
+ B &amp;lt;-- wireguard 라우팅 방법을 찾지 못함 --&amp;gt; C&lt;/pre&gt;
 &lt;h2 id="포트-개방"&gt;포트 개방&lt;a class="td-heading-self-link" href="#%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo firewall-cmd --permanent --add-port&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;6****/udp &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo firewall-cmd --reload &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
@@ -2366,7 +2364,7 @@ graph LR
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;AllowedIPs&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;10.10.0.0/24&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;PersistentKeepalive&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;25&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="테스트"&gt;테스트&lt;a class="td-heading-self-link" href="#%ed%85%8c%ec%8a%a4%ed%8a%b8" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;dns 누출 확인할 것.&lt;/p&gt;</description></item><item><title>netbootxyz</title><link>https://dntco43u.github.io/apps/netbootxyz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/netbootxyz/</guid><description>&lt;h2 id="포트-개방"&gt;포트 개방&lt;a class="td-heading-self-link" href="#%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;dns 누출 확인&lt;/p&gt;</description></item><item><title>netbootxyz</title><link>https://dntco43u.github.io/apps/netbootxyz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/netbootxyz/</guid><description>&lt;h2 id="포트-개방"&gt;포트 개방&lt;a class="td-heading-self-link" href="#%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;tftp: 69번 포트&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;dhcp: 67번 포트(server, relay agent), 68번 포트(client) &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;br&gt;&lt;/li&gt;

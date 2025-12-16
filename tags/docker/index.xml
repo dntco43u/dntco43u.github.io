@@ -84,9 +84,7 @@
  proxy_request_buffering off;
  }
 ...
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>freshrss</title><link>https://dntco43u.github.io/apps/freshrss/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/freshrss/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
-&lt;/div&gt;
-&lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>freshrss</title><link>https://dntco43u.github.io/apps/freshrss/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/freshrss/</guid><description>&lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/freshrss/docker-compose.yml
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yml" data-lang="yml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;services&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;freshrss&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
@@ -150,18 +148,7 @@ logrotate 재구성을 위해 host에 mount&lt;/p&gt;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker &lt;span style="color:#81a1c1"&gt;exec&lt;/span&gt; -it freshrss logrotate -v /etc/logrotate.d/nginx &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;docker &lt;span style="color:#81a1c1"&gt;exec&lt;/span&gt; -it freshrss logrotate -v /etc/logrotate.d/php-fpm
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="proxy-구성"&gt;proxy 구성&lt;a class="td-heading-self-link" href="#proxy-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/nginx/config/sites-available/freshrss.conf
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;...
- location / {
- if ($allowed_country = no) {
- return 403;
- }
- include /etc/nginx/conf.d/include/proxy.conf;
- proxy_pass http://freshrss:80;
- }
-...
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>g4f</title><link>https://dntco43u.github.io/apps/g4f/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/g4f/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>g4f</title><link>https://dntco43u.github.io/apps/g4f/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/g4f/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/g4f/docker-compose.yml

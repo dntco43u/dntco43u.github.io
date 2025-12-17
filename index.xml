@@ -987,12 +987,17 @@ Okusama wa Shougakusei	volume 1	chatper 3&lt;/p&gt;</description></item><item><t
 &lt;div class="alert alert-info" role="alert"&gt;
 &lt;blockquote&gt;
 &lt;p&gt;log를 yyyymmdd* 형식의 폴더에 쌓는다 &lt;code&gt;/opt/code-server/config/data/logs/&lt;/code&gt;&lt;/p&gt;</description></item><item><title>dashy</title><link>https://dntco43u.github.io/apps/dashy/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/dashy/</guid><description>&lt;p&gt;&lt;img src="../dashy-1.webp" alt="image"&gt;&lt;/p&gt;
-&lt;pre class="mermaid"&gt;graph TB
+&lt;pre class="mermaid"&gt;graph LR
+ subgraph cloud
  A1[ec4mrjp5] &amp;lt;-- https --&amp;gt; B[dashy]
  A2[m7jrgve9] &amp;lt;-- https --&amp;gt; B
  A3[gvp6nx1a] &amp;lt;-- https --&amp;gt; B
+ end
  A4[agq3mbw2] &amp;lt;-- https --&amp;gt; B
- A5[sj9n7air] &amp;lt;--&amp;gt; A4&lt;/pre&gt;
+ subgraph home-lab
+ A5[sj9n7air] &amp;lt;--&amp;gt; A4
+ end
+ A6[client] &amp;lt;-- https --&amp;gt; B&lt;/pre&gt;
 &lt;p&gt;&lt;a href="https://da.gvp6nx1a.duckdns.org"&gt;데모 페이지&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/dashy/docker-compose.yml

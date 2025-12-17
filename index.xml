@@ -485,7 +485,7 @@
 &lt;li&gt;komga는 2-depth 이상의 구조로 관리 가능&lt;/li&gt;
 &lt;li&gt;kavita는 2-depth 이상이면 이런저런 문제가 있으므로 1-depth 고정&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;접미어&lt;/p&gt;</description></item><item><title>loki</title><link>https://dntco43u.github.io/apps/loki/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/loki/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
+&lt;p&gt;파일명 접미어&lt;/p&gt;</description></item><item><title>loki</title><link>https://dntco43u.github.io/apps/loki/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/loki/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/loki/docker-compose.yml

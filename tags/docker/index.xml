@@ -986,7 +986,7 @@ Okusama wa Shougakusei	volume 1	chatper 3&lt;/p&gt;</description></item><item><t
  subgraph cloud
  A1[ec4mrjp5] &amp;lt;-- https --&amp;gt; B[dashy]
  A2[m7jrgve9] &amp;lt;-- https --&amp;gt; B
- A3[gvp6nx1a] &amp;lt;-- https --&amp;gt; B
+ A3[gvp6nx1a] &amp;lt;--&amp;gt; B
  end
  A4[agq3mbw2] &amp;lt;-- https --&amp;gt; B
  subgraph home-lab

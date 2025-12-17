@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>kavita on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/kavita/</link><description>Recent content in kavita on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/kavita/index.xml" rel="self" type="application/rss+xml"/><item><title>kavita</title><link>https://dntco43u.github.io/apps/kavita/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/kavita/</guid><description>&lt;p&gt;&lt;img src="../kavita-1.webp" alt="image"&gt;&lt;/p&gt;
-&lt;pre class="mermaid"&gt;graph TB
+&lt;pre class="mermaid"&gt;graph LR
  A1[googledrive] &amp;lt;---&amp;gt; B[kavita]
- A2[googledrive] &amp;lt;---&amp;gt; B
- A3[googledrive] &amp;lt;---&amp;gt; B
- A4[googledrive] &amp;lt;---&amp;gt; B
- A5[googledrive] &amp;lt;---&amp;gt; B
+ A2[onedrive] &amp;lt;---&amp;gt; B
+ A6[teambition] &amp;lt;---&amp;gt; B
+ subgraph cloud
  B &amp;lt;---&amp;gt; C[nginx]
+ end
  C &amp;lt;-- https --&amp;gt; D[client]&lt;/pre&gt;
 &lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/kavita/docker-compose.yml

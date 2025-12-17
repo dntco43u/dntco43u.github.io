@@ -563,6 +563,7 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;dev&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;external&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;true&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="proxy-구성"&gt;proxy 구성&lt;a class="td-heading-self-link" href="#proxy-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;특정 ip만 허용하도록 구성&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/nginx/config/sites-available/lokinf
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;...
  location / {
@@ -822,24 +823,8 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - &lt;span style="color:#81a1c1"&gt;files&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - pgsql.json
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;scheme&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; http
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/prometheus/config/web.yml
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yml" data-lang="yml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;basic_auth_users&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;dev&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; $***********************************************************
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="proxy-구성"&gt;proxy 구성&lt;a class="td-heading-self-link" href="#proxy-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/nginx/config/sites-available/prometheus.conf
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;...
- location / {
- include /etc/nginx/conf.d/include/proxy.conf;
- proxy_pass http://prometheus:9090;
- proxy_intercept_errors on;
- allow 192.168.0.0/16;
- allow 2**.**.**.*; #sj9n7air
- allow 1**.***.**.**; #gvp6nx1a
- allow 3*.***.***.***; #agknwpt3
- deny all;
- }
-...
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>promocode-helper</title><link>https://dntco43u.github.io/dev/promocode-helper/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/promocode-helper/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="webyml"&gt;web.yml&lt;a class="td-heading-self-link" href="#webyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;http basic auth 구성&lt;/p&gt;</description></item><item><title>promocode-helper</title><link>https://dntco43u.github.io/dev/promocode-helper/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/promocode-helper/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
 &lt;/div&gt;</description></item><item><title>rename-helper</title><link>https://dntco43u.github.io/dev/rename-helper/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/rename-helper/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
 &lt;/div&gt;</description></item><item><title>selenium</title><link>https://dntco43u.github.io/apps/selenium/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/selenium/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
 &lt;/div&gt;
@@ -1275,9 +1260,7 @@ d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*ERROR|SEVERE|CRITICAL
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;7z x -y -o&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$USERPROFILE&lt;span style="color:#a3be8c"&gt;/Downloads&amp;#34;&lt;/span&gt; $USERPROFILE/Downloads/klogg-settings.zip &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;mv $USERPROFILE/Downloads/klogg.conf &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$PROGRAMFILES&lt;span style="color:#a3be8c"&gt;/klogg&amp;#34;&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;rm $USERPROFILE/Downloads/klogg-settings.zip
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>node-exporter</title><link>https://dntco43u.github.io/apps/node-exporter/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/node-exporter/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
-&lt;/div&gt;
-&lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item><item><title>node-exporter</title><link>https://dntco43u.github.io/apps/node-exporter/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/node-exporter/</guid><description>&lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;수집 데이터 접근을 위한 host 모드&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/node-exporter/docker-compose.yml
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yml" data-lang="yml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;services&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
@@ -1307,7 +1290,7 @@ d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*ERROR|SEVERE|CRITICAL
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - --collector.interrupts
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;restart&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; unless-stopped
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="webyml"&gt;web.yml&lt;a class="td-heading-self-link" href="#webyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;web.xml 암호 생성.&lt;/p&gt;</description></item><item><title>portainer</title><link>https://dntco43u.github.io/apps/portainer/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/portainer/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
+&lt;p&gt;http basic auth 구성&lt;/p&gt;</description></item><item><title>portainer</title><link>https://dntco43u.github.io/apps/portainer/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/portainer/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/portainer/docker-compose.yml
@@ -3051,13 +3034,13 @@ proxy_read_timeout 180s;
 ...
 &lt;/code&gt;&lt;/pre&gt;&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
 &lt;blockquote&gt;
-&lt;p&gt;WebAV 액세스 객체와 alist가 LAN인 경우 두 모드 간에 속도 차이가 없습니다
-에이전트 모드를 선택하는 것이 좋습니다
-외부 네트워크인 경우 302 점프는 서버를 우회하여 네트워크 디스크에 직접 액세스할 수 있습니다
-속도가 더 빠르고 alist 서버의 대역폭을 차지하지 않습니다.
-그러나 302 점프는 각 네트워크 디스크에 맞게 요청 헤더를 설정해야 할 수 있습니다
-에이전시 모델에는 이러한 우려가 없습니다
-또한 302는 여러 IP에 대한 동시 액세스 문제도 있습니다 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item><item><title>bash</title><link>https://dntco43u.github.io/infra/bash/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/bash/</guid><description>&lt;h2 id="파일별-구분"&gt;파일별 구분&lt;a class="td-heading-self-link" href="#%ed%8c%8c%ec%9d%bc%eb%b3%84-%ea%b5%ac%eb%b6%84" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;WebAV 액세스 객체와 alist가 LAN인 경우 두 모드 간에 속도 차이가 없습니다.&lt;br&gt;
+에이전트 모드를 선택하는 것이 좋습니다.&lt;br&gt;
+외부 네트워크인 경우 302 점프는 서버를 우회하여 네트워크 디스크에 직접 액세스할 수 있습니다.&lt;br&gt;
+속도가 더 빠르고 alist 서버의 대역폭을 차지하지 않습니다.&lt;br&gt;
+그러나 302 점프는 각 네트워크 디스크에 맞게 요청 헤더를 설정해야 할 수 있습니다.&lt;br&gt;
+에이전시 모델에는 이러한 우려가 없습니다.&lt;br&gt;
+또한 302는 여러 IP에 대한 동시 액세스 문제도 있습니다. &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item><item><title>bash</title><link>https://dntco43u.github.io/infra/bash/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/bash/</guid><description>&lt;h2 id="파일별-구분"&gt;파일별 구분&lt;a class="td-heading-self-link" href="#%ed%8c%8c%ec%9d%bc%eb%b3%84-%ea%b5%ac%eb%b6%84" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;

@@ -83,10 +83,10 @@ proxy_read_timeout 180s;
 ...
 &lt;/code&gt;&lt;/pre&gt;&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
 &lt;blockquote&gt;
-&lt;p&gt;WebAV 액세스 객체와 alist가 LAN인 경우 두 모드 간에 속도 차이가 없습니다
-에이전트 모드를 선택하는 것이 좋습니다
-외부 네트워크인 경우 302 점프는 서버를 우회하여 네트워크 디스크에 직접 액세스할 수 있습니다
-속도가 더 빠르고 alist 서버의 대역폭을 차지하지 않습니다.
-그러나 302 점프는 각 네트워크 디스크에 맞게 요청 헤더를 설정해야 할 수 있습니다
-에이전시 모델에는 이러한 우려가 없습니다
-또한 302는 여러 IP에 대한 동시 액세스 문제도 있습니다 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;WebAV 액세스 객체와 alist가 LAN인 경우 두 모드 간에 속도 차이가 없습니다.&lt;br&gt;
+에이전트 모드를 선택하는 것이 좋습니다.&lt;br&gt;
+외부 네트워크인 경우 302 점프는 서버를 우회하여 네트워크 디스크에 직접 액세스할 수 있습니다.&lt;br&gt;
+속도가 더 빠르고 alist 서버의 대역폭을 차지하지 않습니다.&lt;br&gt;
+그러나 302 점프는 각 네트워크 디스크에 맞게 요청 헤더를 설정해야 할 수 있습니다.&lt;br&gt;
+에이전시 모델에는 이러한 우려가 없습니다.&lt;br&gt;
+또한 302는 여러 IP에 대한 동시 액세스 문제도 있습니다. &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item></channel></rss>

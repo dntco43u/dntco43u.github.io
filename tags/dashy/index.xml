@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>dashy on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/dashy/</link><description>Recent content in dashy on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/dashy/index.xml" rel="self" type="application/rss+xml"/><item><title>dashy</title><link>https://dntco43u.github.io/apps/dashy/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/dashy/</guid><description>&lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>dashy on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/dashy/</link><description>Recent content in dashy on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/dashy/index.xml" rel="self" type="application/rss+xml"/><item><title>dashy</title><link>https://dntco43u.github.io/apps/dashy/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/dashy/</guid><description>&lt;p&gt;&lt;img src="../dashy-1.webp" alt="image"&gt;&lt;/p&gt;
+&lt;pre class="mermaid"&gt;graph TB
+ A1[ec4mrjp5] &amp;lt;-- https --&amp;gt; B[dashy]
+ A2[m7jrgve9] &amp;lt;-- https --&amp;gt; B
+ A3[gvp6nx1a] &amp;lt;-- https --&amp;gt; B
+ A4[agq3mbw2] &amp;lt;-- https --&amp;gt; B
+ A5[sj9n7air] &amp;lt;--&amp;gt; A4&lt;/pre&gt;
+&lt;p&gt;&lt;a href="https://da.gvp6nx1a.duckdns.org"&gt;데모 페이지&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/dashy/docker-compose.yml
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yml" data-lang="yml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;services&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;dashy&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
@@ -22,15 +30,4 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;dev&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;external&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;true&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="구성"&gt;구성&lt;a class="td-heading-self-link" href="#%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;암호 hash 생성.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; -n &lt;span style="color:#a3be8c"&gt;&amp;#34;2***************************************************************&amp;#34;&lt;/span&gt; &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; sha256sum
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;7***************************************************************
-&lt;/code&gt;&lt;/pre&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/dashy/config/conf.yml
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;appConfig:
- auth:
- users:
- - user: dev
- hash: 7***************************************************************
- type: admin
-...
-&lt;/code&gt;&lt;/pre&gt;</description></item></channel></rss>
+&lt;p&gt;구성에 필요한 로그인 암호 sha256 hash 생성&lt;/p&gt;</description></item></channel></rss>

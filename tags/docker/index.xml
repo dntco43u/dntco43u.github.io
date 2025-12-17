@@ -452,9 +452,9 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
 }
 &lt;/code&gt;&lt;/pre&gt;</description></item><item><title>jellyfin</title><link>https://dntco43u.github.io/apps/jellyfin/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/jellyfin/</guid><description>&lt;p&gt;&lt;img src="../jellyfin-1.webp" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
- A1[googledrive] &amp;lt;---&amp;gt; B[jellyfin]
+ A1[googledrive] &amp;lt;-- mount --&amp;gt; B[jellyfin]
  subgraph cloud
- B &amp;lt;---&amp;gt; C[nginx]
+ B &amp;lt;-- proxy --&amp;gt; C[nginx]
  end
  C &amp;lt;-- https --&amp;gt; D[client]&lt;/pre&gt;
 &lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;

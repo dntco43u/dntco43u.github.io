@@ -75,4 +75,6 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id="references"&gt;References&lt;a class="td-heading-self-link" href="#references" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://docs.gitea.com/administration/config-cheat-sheet"&gt;https://docs.gitea.com/administration/config-cheat-sheet&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.gitea.com/administration/config-cheat-sheet"&gt;https://docs.gitea.com/administration/config-cheat-sheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

@@ -28,7 +28,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;dev&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;external&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;true&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="구성"&gt;구성&lt;a class="td-heading-self-link" href="#%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;vless-websocket-tls 구성&lt;/p&gt;</description></item><item><title>wireguard</title><link>https://dntco43u.github.io/infra/wireguard/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/wireguard/</guid><description>&lt;pre class="mermaid"&gt;graph LR
+&lt;p&gt;vless-websocket-tls 구성&lt;/p&gt;</description></item><item><title>wireguard</title><link>https://dntco43u.github.io/infra/wireguard/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/wireguard/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/wireguard-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;pre class="mermaid"&gt;graph LR
  subgraph iptables
  subgraph docker-bridge-network
  A1[docker/wireguard] &amp;lt;--&amp;gt; B[docker]

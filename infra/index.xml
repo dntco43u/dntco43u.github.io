@@ -865,9 +865,7 @@ DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료
 &lt;p&gt;서비스 데이터를 /home에 저장하는 것을 좋아하지 않습니다. 많은 사람들이 Docker를 사용하지만 그 이유를 이해할 수 없습니다.&lt;br&gt;
 그것에 대해 특별히 나쁜 것은 없으며, 데이터베이스를 / etc에 저장하는 것과 같은 지저분한 imho입니다. :-)&lt;br&gt;
 /srv 는 응용 프로그램 / 서비스 데이터를 저장하기 위한 것이므로 사용합니다.&lt;br&gt;
-/opt는 원래 많은 상용 공급업체에서 시스템 파일과 혼합되지 않은 장소에 앱/데이터를 설치하기 위해 사용하는 오래된 표준입니다.&lt;/p&gt;</description></item><item><title>grafana</title><link>https://dntco43u.github.io/infra/grafana/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/grafana/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/grafana-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+/opt는 원래 많은 상용 공급업체에서 시스템 파일과 혼합되지 않은 장소에 앱/데이터를 설치하기 위해 사용하는 오래된 표준입니다.&lt;/p&gt;</description></item><item><title>grafana</title><link>https://dntco43u.github.io/infra/grafana/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/grafana/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/grafana-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph TB
  subgraph gvp6nx1a
  A1[loki] -- http --&amp;gt; B[grafana]
@@ -882,8 +880,9 @@ DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료
  E3[node-exporter] -- https --&amp;gt; A3
  E4[promtail] -- https --&amp;gt; A1
  D[client] &amp;lt;-- https --&amp;gt; C&lt;/pre&gt;
-&lt;h2 id="데모-페이지"&gt;데모 페이지&lt;a class="td-heading-self-link" href="#%eb%8d%b0%eb%aa%a8-%ed%8e%98%ec%9d%b4%ec%a7%80" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://gr.gvp6nx1a.duckdns.org/d/T512JVH7a/nginx?orgId=1"&gt;nginx 바로 가기&lt;/a&gt; &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item><item><title>nginx</title><link>https://dntco43u.github.io/infra/nginx/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/nginx/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/nginx-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;network bridge 구성이어도 host를 허용하도록 구성&lt;/p&gt;</description></item><item><title>nginx</title><link>https://dntco43u.github.io/infra/nginx/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/nginx/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/nginx-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
  A5[server] &amp;lt;-- https --&amp;gt; B[nginx]
  subgraph gvp6nx1a
@@ -937,7 +936,7 @@ DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; rm -rf /var/cache/apk/*&lt;span style="color:#bf616a"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker build -t e7hnr8ov/nginx:alpine /opt/nginx
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;대부분의 app이 거치는 proxy이므로 network은 bridge 구성이어도 host를 허용하도록 구성&lt;/p&gt;</description></item><item><title>oracle/instantclient</title><link>https://dntco43u.github.io/infra/oracle-instantclient/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/oracle-instantclient/</guid><description>&lt;h2 id="dockerfile-x86"&gt;Dockerfile (x86)&lt;a class="td-heading-self-link" href="#dockerfile-x86" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;network bridge 구성이어도 host를 허용하도록 구성&lt;/p&gt;</description></item><item><title>oracle/instantclient</title><link>https://dntco43u.github.io/infra/oracle-instantclient/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/oracle-instantclient/</guid><description>&lt;h2 id="dockerfile-x86"&gt;Dockerfile (x86)&lt;a class="td-heading-self-link" href="#dockerfile-x86" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vi /opt/instantclient/Dockerfile
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-dockerfile" data-lang="dockerfile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;#FIXME: ubuntu 최신 버전 libaio1 없으므로 22.04로 build&lt;/span&gt;&lt;span style="color:#bf616a"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bf616a"&gt;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;FROM&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;ubuntu:22.04&lt;/span&gt;&lt;span style="color:#bf616a"&gt;

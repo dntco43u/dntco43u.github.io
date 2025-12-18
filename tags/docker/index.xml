@@ -2106,10 +2106,11 @@ proxy_read_timeout 180s;
  subgraph gvp6nx1a
  A1[apps] &amp;lt;-- http --&amp;gt; B[nginx]
  A2[geoip] -- country-code --&amp;gt; B
- B -- log --&amp;gt; A3[promtail/loki]
+ B -- log --&amp;gt; A3[promtail]
+ A3 -- http --&amp;gt; A7[loki]
  A4[acme.sh] -- ssl-cert --&amp;gt; B
  end
- A3 &amp;lt;-- https --&amp;gt; E[server]
+ A7 &amp;lt;-- https --&amp;gt; E[server]
  A6[zerossl] -- dns-api --&amp;gt; A4
  B &amp;lt;-- https --&amp;gt; C1[client]&lt;/pre&gt;
 &lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;

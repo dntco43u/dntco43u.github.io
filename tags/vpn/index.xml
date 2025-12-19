@@ -31,10 +31,9 @@
 &lt;p&gt;vless-websocket-tls 구성&lt;/p&gt;</description></item><item><title>wireguard</title><link>https://dntco43u.github.io/infra/wireguard/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/wireguard/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/wireguard-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
  subgraph iptables
- subgraph docker-bridge-network
+ subgraph bridge-network
  A1[docker/wireguard] &amp;lt;--&amp;gt; B[docker]
- A2[container] &amp;lt;--&amp;gt; B
- A3[container] &amp;lt;--&amp;gt; B
+ A2[containers] &amp;lt;--&amp;gt; B
  end
  subgraph host-network
  C[host] &amp;lt;--&amp;gt; C1[package/wireguard]

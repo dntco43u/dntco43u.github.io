@@ -1025,7 +1025,8 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
  proxy_request_buffering off;
  }
 ...
-&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>uptime-kuma</title><link>https://dntco43u.github.io/apps/uptime-kuma/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/uptime-kuma/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/uptime-kuma-1.webp" alt="image"&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;</description></item><item><title>uptime-kuma</title><link>https://dntco43u.github.io/apps/uptime-kuma/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/uptime-kuma/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/uptime-kuma-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/uptime-kuma-1.webp" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph TB
  A0[duckdns] &amp;lt;-- dns --&amp;gt; B[uptime-kuma]
  subgraph cloud

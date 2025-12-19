@@ -1193,8 +1193,8 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl https://dntco43u.github.io/infra/doublecmd-settings.zip -o $USERPROFILE/Downloads/doublecmd-settings.zip &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;7z x -y -o&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$APPDATA&lt;span style="color:#a3be8c"&gt;/doublecmd&amp;#34;&lt;/span&gt; $USERPROFILE/Downloads/doublecmd-settings.zip &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;rm $USERPROFILE/Downloads/doublecmd-settings.zip
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="license"&gt;License&lt;a class="td-heading-self-link" href="#license" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;상업적 목적에 제한 없음&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="license"&gt;License&lt;a class="td-heading-self-link" href="#license" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;상업적 이용 제한 없음&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Double Commander: GNU GPL 2.0 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
 &lt;li&gt;D2Coding: OFL &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;

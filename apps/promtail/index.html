@@ -16,18 +16,18 @@ Auto
   B12[selinux] -- log --&gt; A13
   B11[nginx] -- log --&gt; A13
   end
-  A13 -- https --&gt; A7[loki]
+  A13 &lt;-- https --&gt; A7[loki]
   subgraph m7jrgve9
   B23[sshd] -- log --&gt; A23[promtail]
   B22[selinux] -- log --&gt; A23
   B21[nginx] -- log --&gt; A23
   end
-  A23 -- https --&gt; A7[loki]
+  A23 &lt;-- https --&gt; A7[loki]
   subgraph gvp6nx1a
   B33[sshd] -- log --&gt; A33[promtail]
   B32[selinux] -- log --&gt; A33
   B31[nginx] -- log --&gt; A33
-  A33 -- http --&gt; A7[loki]
+  A33 &lt;-- http --&gt; A7[loki]
   end</pre><h2 id=container-구성>container 구성<a class=td-heading-self-link href=#container-%ea%b5%ac%ec%84%b1 aria-label="Heading self-link"></a></h2><h3 id=env>.env<a class=td-heading-self-link href=#env aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>vi /opt/promtail/.env
 </span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-ini data-lang=ini><span style=display:flex><span><span style=color:#8fbcbb>LOKI_URL</span><span style=color:#81a1c1>=</span><span style=color:#a3be8c>http://loki:3100/loki/api/v1/push</span>
 </span></span><span style=display:flex><span><span style=color:#8fbcbb>LOKI_USERNAME</span><span style=color:#81a1c1>=</span><span style=color:#a3be8c>dev</span>

@@ -343,8 +343,16 @@ DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="geekbench5"&gt;geekbench5&lt;a class="td-heading-self-link" href="#geekbench5" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/low-performance-nas-benchmarks-1.webp" alt="image"&gt;&lt;/p&gt;</description></item><item><title>배포판 별 메모리 사용량</title><link>https://dntco43u.github.io/etc/memory-usage-by-linux-distribution/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/etc/memory-usage-by-linux-distribution/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/linux-logo.webp#center" alt="image"&gt;&lt;/p&gt;
-&lt;h2 id="메모리-사용량"&gt;메모리 사용량&lt;a class="td-heading-self-link" href="#%eb%a9%94%eb%aa%a8%eb%a6%ac-%ec%82%ac%ec%9a%a9%eb%9f%89" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;J5005 + PM9A1
+&lt;img src="https://dntco43u.github.io/images/low-performance-nas-benchmarks-1.webp" alt="image"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/s6h7k8rv/blob/main/yabs.sh"&gt;https://github.com/dntco43u/s6h7k8rv/blob/main/yabs.sh&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>배포판 별 메모리 사용량</title><link>https://dntco43u.github.io/etc/memory-usage-by-linux-distribution/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/etc/memory-usage-by-linux-distribution/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/linux-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="가용-메모리-비교"&gt;가용 메모리 비교&lt;a class="td-heading-self-link" href="#%ea%b0%80%ec%9a%a9-%eb%a9%94%eb%aa%a8%eb%a6%ac-%eb%b9%84%ea%b5%90" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;설치 후 초기 상태에서 비교&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;free -h
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;

@@ -153,7 +153,8 @@ DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료
 &lt;div class="alert alert-warning" role="alert"&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Problem 3: package tuned-profiles-oci-2.18.0-2.0.1.el8.noarch requires tuned = 2.18.0-2.0.1.el8, but none of the providers can be installed&lt;/p&gt;</description></item><item><title>구형 nas 벤치마크</title><link>https://dntco43u.github.io/etc/low-performance-nas-benchmarks/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/etc/low-performance-nas-benchmarks/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/yabs-logo.webp#center" alt="image"&gt;&lt;/p&gt;
-&lt;h2 id="설치-후"&gt;설치 후 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#%ec%84%a4%ec%b9%98-%ed%9b%84" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="벤치마크"&gt;벤치마크&lt;a class="td-heading-self-link" href="#%eb%b2%a4%ec%b9%98%eb%a7%88%ed%81%ac" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="geekbench4"&gt;geekbench4 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#geekbench4" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;yabs.sh
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/bash
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# geekbench 벤치마크&lt;/span&gt;
@@ -164,7 +165,7 @@ DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;msg_file&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;/home/dev/.local/log/&lt;span style="color:#81a1c1;font-weight:bold"&gt;$(&lt;/span&gt;basename &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$0&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; sed &lt;span style="color:#a3be8c"&gt;&amp;#39;s/.sh//&amp;#39;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;)&lt;/span&gt;.tmp
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl -sL https://raw.githubusercontent.com/masonr/yet-another-bench-script/master/yabs.sh &lt;span style="color:#ebcb8b"&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; bash -s -- -bi5 &amp;gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$log_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; bash -s -- -bi4 &amp;gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$log_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;{&lt;/span&gt; grep -oE &lt;span style="color:#a3be8c"&gt;&amp;#34;completed in.*&amp;#34;&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$log_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; sed -E &lt;span style="color:#a3be8c"&gt;&amp;#39;s/(completed in.)(.*)/Elapsed time: \2/g&amp;#39;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; grep -E &lt;span style="color:#a3be8c"&gt;&amp;#34;Host\s*:&amp;#34;&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$log_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
@@ -341,12 +342,10 @@ DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료
 &lt;/table&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="footnotes" role="doc-endnotes"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-&lt;li id="fn:1"&gt;
-&lt;p&gt;&lt;a href="https://github.com/dntco43u/s6h7k8rv/blob/main/yabs.sh"&gt;https://github.com/dntco43u/s6h7k8rv/blob/main/yabs.sh&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>배포판 별 메모리 사용량</title><link>https://dntco43u.github.io/etc/memory-usage-by-linux-distribution/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/etc/memory-usage-by-linux-distribution/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/linux-logo.webp#center" alt="image"&gt;&lt;/p&gt;
-&lt;h2 id="설치-후"&gt;설치 후&lt;a class="td-heading-self-link" href="#%ec%84%a4%ec%b9%98-%ed%9b%84" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="geekbench5"&gt;geekbench5&lt;a class="td-heading-self-link" href="#geekbench5" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/low-performance-nas-benchmarks-1.webp" alt="image"&gt;&lt;/p&gt;</description></item><item><title>배포판 별 메모리 사용량</title><link>https://dntco43u.github.io/etc/memory-usage-by-linux-distribution/</link><pubDate>Sun, 07 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/etc/memory-usage-by-linux-distribution/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/linux-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="메모리-사용량"&gt;메모리 사용량&lt;a class="td-heading-self-link" href="#%eb%a9%94%eb%aa%a8%eb%a6%ac-%ec%82%ac%ec%9a%a9%eb%9f%89" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;설치 후 초기 상태에서 비교&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;free -h
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;
@@ -551,4 +550,4 @@ DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
-&lt;p&gt;rockylinux는 debian 수준으로 가볍다.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;rockylinux는 debian 수준으로 가볍다&lt;/p&gt;</description></item></channel></rss>

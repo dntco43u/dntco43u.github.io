@@ -353,7 +353,7 @@ num_logs = 5
 </span></span><span style=display:flex><span>  <span style=color:#616e87;font-style:italic>#rm -rf /opt/prometheus/data/wal/*</span>
 </span></span><span style=display:flex><span>  <span style=color:#616e87;font-style:italic>#rm -rf /opt/prometheus/data/chuncks_head/*</span>
 </span></span><span style=display:flex><span>  <span style=color:#616e87;font-style:italic>#nginx log 삭제 (임시)</span>
-</span></span><span style=display:flex><span>  truncate -s <span style=color:#b48ead>0</span> /opt/nginx/log/*.log
+</span></span><span style=display:flex><span>  <span style=color:#616e87;font-style:italic>#truncate -s 0 /opt/nginx/log/*.log</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span>  <span style=color:#616e87;font-style:italic>#xfs 조각 모음</span>
 </span></span><span style=display:flex><span>  /usr/sbin/xfs_fsr <span style=color:#a3be8c>&#34;</span>$disk<span style=color:#a3be8c>&#34;</span><span style=color:#eceff4>;</span>

@@ -5,7 +5,7 @@
 	A[openwrt] --- B2[ssh]
 	end
 	B2 ---- D[duckdns]
-	D &amp;lt;-- ssh --&amp;gt; C1[client]
+	D &amp;lt;-- ssh --&amp;gt; C1[clients]
 	C1 --- C2[keepass.keyx]&lt;/pre&gt;
 &lt;h2 id="openwrt-구성"&gt;openwrt 구성&lt;a class="td-heading-self-link" href="#openwrt-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="포트-개방"&gt;포트 개방&lt;a class="td-heading-self-link" href="#%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;

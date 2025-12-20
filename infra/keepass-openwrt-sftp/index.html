@@ -16,7 +16,7 @@ Auto
 	A[openwrt] --- B2[ssh]
 	end
 	B2 ---- D[duckdns]
-	D &lt;-- ssh --&gt; C1[client]
+	D &lt;-- ssh --&gt; C1[clients]
 	C1 --- C2[keepass.keyx]</pre><h2 id=openwrt-구성>openwrt 구성<a class=td-heading-self-link href=#openwrt-%ea%b5%ac%ec%84%b1 aria-label="Heading self-link"></a></h2><h3 id=포트-개방>포트 개방<a class=td-heading-self-link href=#%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9 aria-label="Heading self-link"></a></h3><div class=highlight><pre tabindex=0 style=color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>vi /etc/config/firewall
 </span></span></code></pre></div><pre tabindex=0><code class=language-conf data-lang=conf>...
 config redirect

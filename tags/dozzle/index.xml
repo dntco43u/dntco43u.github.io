@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>dozzle on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/dozzle/</link><description>Recent content in dozzle on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/dozzle/index.xml" rel="self" type="application/rss+xml"/><item><title>dozzle</title><link>https://dntco43u.github.io/apps/dozzle/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/dozzle/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/dozzle-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
  subgraph gvp6nx1a
+ A[docker.sock] --&amp;gt; B
  B[dozzle] &amp;lt;-- proxy --&amp;gt; C[nginx]
  end
  C &amp;lt;-- https --&amp;gt; D[client]&lt;/pre&gt;

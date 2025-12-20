@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>앱 on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/apps/</link><description>Recent content in 앱 on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/apps/index.xml" rel="self" type="application/rss+xml"/><item><title>esportshelper</title><link>https://dntco43u.github.io/apps/esportshelper/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/esportshelper/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/sh-logo.webp#center" alt="image"&gt;&lt;/p&gt;
-&lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class="mermaid"&gt;graph LR
+ subgraph gvp6nx1a
+ A[https://lolesports.com/] &amp;lt;-- https --&amp;gt; B
+ B[esportshelper] &amp;lt;-- proxy --&amp;gt; C[nginx]
+ end
+ C &amp;lt;-- https --&amp;gt; D[client]&lt;/pre&gt;
+&lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/esportshelper/docker-compose.yml
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yml" data-lang="yml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;services&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;esportshelper&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
@@ -25,7 +32,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;external&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;true&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo docker cp esportshelper:/esportshelper/config.yaml /home/dev/docker/esportshelper/ &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo chown dev:dev -R /home/dev/docker/esportshelper
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="configyaml"&gt;config.yaml&lt;a class="td-heading-self-link" href="#configyaml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="configyaml"&gt;config.yaml&lt;a class="td-heading-self-link" href="#configyaml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/esportshelper/config.yaml
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yml" data-lang="yml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;### 필수 입력 사항&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;username&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;f*******&amp;#34;&lt;/span&gt; &lt;span style="color:#616e87;font-style:italic"&gt;# 필수, 계정 번호&lt;/span&gt;
@@ -57,7 +64,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;debug&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;False&lt;/span&gt; &lt;span style="color:#616e87;font-style:italic"&gt;# 디버그 모드를 활성화할지 여부. 활성화된 후 예외가 발생하면 스크린샷이 사진 폴더로 이동됩니다. 기본값은 False입니다.&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;arm64: True # Linux ARM64에서 Chromium 사용을 지원하려면 platformForm&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;linux&amp;#34;&lt;/span&gt;를 구성하고 &amp;#34;/home/USERNAME/.local/share/unDetected_chromedriver/chromedriver&amp;#34; 경로에 chromedriver가 있어야 합니다. 자세한 내용은 다음을 참조하세요. https:/ /github.com/Yudaotor/EsportsHelper/wiki/The-Way-Using-Chromium-on-ARM64
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;isDockerized&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;True&lt;/span&gt; &lt;span style="color:#616e87;font-style:italic"&gt;# Docker에서 실행할 때만 True로 구성되며 기본값은 False입니다.&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="webhook-구성"&gt;webhook 구성&lt;a class="td-heading-self-link" href="#webhook-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="webhook-구성"&gt;webhook 구성&lt;a class="td-heading-self-link" href="#webhook-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;디스코드 webhook&lt;/p&gt;</description></item><item><title>freshrss</title><link>https://dntco43u.github.io/apps/freshrss/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/freshrss/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/freshrss-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://dntco43u.github.io/images/freshrss-1.webp" alt="image"&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
@@ -1089,6 +1096,7 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
 &lt;p&gt;로그인 암호 sha256 hash 생성 후 구성에 저장&lt;/p&gt;</description></item><item><title>dozzle</title><link>https://dntco43u.github.io/apps/dozzle/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/dozzle/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/dozzle-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
  subgraph gvp6nx1a
+ A[docker.sock] --&amp;gt; B
  B[dozzle] &amp;lt;-- proxy --&amp;gt; C[nginx]
  end
  C &amp;lt;-- https --&amp;gt; D[client]&lt;/pre&gt;

@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>giscus on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/giscus/</link><description>Recent content in giscus on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/giscus/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo</title><link>https://dntco43u.github.io/apps/hugo/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/hugo/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/hugo-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;pre class="mermaid"&gt;graph LR
+ subgraph gvp6nx1a
+ B[hugo] &amp;lt;-- proxy --&amp;gt; C[nginx]
+ end
+ C1[github-page] &amp;lt;-- https --&amp;gt; D[client]
+ C &amp;lt;-- https --&amp;gt; D
+ B -- git --&amp;gt; C1&lt;/pre&gt;
 &lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;배포 폴더 &lt;code&gt;/opt/hugo/data/public/&lt;/code&gt;&lt;/li&gt;

@@ -293,6 +293,13 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
 &lt;div class="alert alert-info" role="alert"&gt;
 &lt;blockquote&gt;
 &lt;p&gt;초기 계정&lt;/p&gt;</description></item><item><title>hugo</title><link>https://dntco43u.github.io/apps/hugo/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/hugo/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/hugo-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;pre class="mermaid"&gt;graph LR
+ subgraph gvp6nx1a
+ B[hugo] &amp;lt;-- proxy --&amp;gt; C[nginx]
+ end
+ C1[github-page] &amp;lt;-- https --&amp;gt; D[client]
+ C &amp;lt;-- https --&amp;gt; D
+ B -- git --&amp;gt; C1&lt;/pre&gt;
 &lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;배포 폴더 &lt;code&gt;/opt/hugo/data/public/&lt;/code&gt;&lt;/li&gt;

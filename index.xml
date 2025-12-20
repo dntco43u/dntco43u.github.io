@@ -1179,7 +1179,6 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;external&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;true&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="공통-구성"&gt;공통 구성&lt;a class="td-heading-self-link" href="#%ea%b3%b5%ed%86%b5-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;font D2Coding 구성&lt;/p&gt;</description></item><item><title>dashy</title><link>https://dntco43u.github.io/apps/dashy/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/dashy/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/dashy-logo.webp#center" alt="image"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/dashy-1.webp" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
  subgraph cloud
  A1[ec4mrjp5] &amp;lt;-- https --&amp;gt; B[dashy]
@@ -1191,8 +1190,8 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
  A5[sj9n7air] &amp;lt;--&amp;gt; A4
  end
  A6[client] &amp;lt;-- https --&amp;gt; B&lt;/pre&gt;
-&lt;p&gt;&lt;a href="https://da.gvp6nx1a.duckdns.org"&gt;데모 페이지&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/dashy/docker-compose.yml
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yml" data-lang="yml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;services&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;dashy&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
@@ -1215,8 +1214,8 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;networks&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;dev&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;external&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;true&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="구성"&gt;구성&lt;a class="td-heading-self-link" href="#%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;구성에 필요한 로그인 암호 sha256 hash 생성&lt;/p&gt;</description></item><item><title>doublecmd</title><link>https://dntco43u.github.io/infra/doublecmd/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/doublecmd/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/doublecmd-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="암호-구성"&gt;암호 구성&lt;a class="td-heading-self-link" href="#%ec%95%94%ed%98%b8-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;로그인 암호 sha256 hash 생성 후 구성에 저장&lt;/p&gt;</description></item><item><title>doublecmd</title><link>https://dntco43u.github.io/infra/doublecmd/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/doublecmd/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/doublecmd-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://dntco43u.github.io/images/doublecmd-1.webp" alt="image"&gt;&lt;/p&gt;
 &lt;h2 id="windows-구성"&gt;windows 구성&lt;a class="td-heading-self-link" href="#windows-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="개요"&gt;개요&lt;a class="td-heading-self-link" href="#%ea%b0%9c%ec%9a%94" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;

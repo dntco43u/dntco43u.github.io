@@ -192,7 +192,7 @@
 &lt;p&gt;logrotate는 root(0:0) 권한이 필요하고 app은 abc(911:911)가 실행한다&lt;br&gt;
 logrotate 재구성을 위해 host에 mount&lt;/p&gt;</description></item><item><title>g4f</title><link>https://dntco43u.github.io/apps/g4f/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/g4f/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/g4f-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
- A[ai-api] &amp;lt;-- https --&amp;gt; B
+ A[api] &amp;lt;-- https --&amp;gt; B
  subgraph gvp6nx1a
  B[g4f] &amp;lt;-- proxy --&amp;gt; C[authelia]
  C &amp;lt;-- proxy --&amp;gt; C1[nginx]
@@ -201,7 +201,7 @@ logrotate 재구성을 위해 host에 mount&lt;/p&gt;</description></item><item>
  B &amp;lt;---&amp;gt; E1[ai_tel_bot.py]
  E1 &amp;lt;---&amp;gt; F[telegram-bot]&lt;/pre&gt;
 &lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id="docker-composeyml-arm"&gt;docker-compose.yml (arm)&lt;a class="td-heading-self-link" href="#docker-composeyml-arm" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/g4f/docker-compose.yml
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yml" data-lang="yml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;services&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;g4f&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
@@ -1912,8 +1912,7 @@ d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*ERROR|SEVERE|CRITICAL
  end
  B -- ip/port bsn/unban --&amp;gt; A3[iptables]
  B -- https --&amp;gt; C[telegram]
- A3 &amp;lt;-- 6****/tcp --&amp;gt; D1[Attacker]
- A3 &amp;lt;-- 6****/tcp --&amp;gt; D2[Scanner]&lt;/pre&gt;
+ A3 &amp;lt;-- 6****/tcp --&amp;gt; D1[client]&lt;/pre&gt;
 &lt;h2 id="host-구성"&gt;host 구성&lt;a class="td-heading-self-link" href="#host-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="설치"&gt;설치&lt;a class="td-heading-self-link" href="#%ec%84%a4%ec%b9%98" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf -y update &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo dnf install -y fail2ban whois

@@ -3449,7 +3449,8 @@ proxy_read_timeout 180s;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;done&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="oraclecloud-콘솔"&gt;oraclecloud 콘솔&lt;a class="td-heading-self-link" href="#oraclecloud-%ec%bd%98%ec%86%94" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Always Free 태그는 없지만 지난 몇 년간 프리 티어 계정에서 잘 작동 중 (2025-12) &lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;</description></item><item><title>oracle/instantclient</title><link>https://dntco43u.github.io/infra/oracle-instantclient/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/oracle-instantclient/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/oracle-logo.webp#center" alt="image"&gt;&lt;/p&gt;
-&lt;h2 id="dockerfile-x86"&gt;Dockerfile (x86)&lt;a class="td-heading-self-link" href="#dockerfile-x86" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="dockerfile-x86"&gt;Dockerfile (x86)&lt;a class="td-heading-self-link" href="#dockerfile-x86" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vi /opt/instantclient/Dockerfile
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-dockerfile" data-lang="dockerfile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;#FIXME: ubuntu 최신 버전 libaio1 없으므로 22.04로 build&lt;/span&gt;&lt;span style="color:#bf616a"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bf616a"&gt;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;FROM&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;ubuntu:22.04&lt;/span&gt;&lt;span style="color:#bf616a"&gt;
@@ -3491,7 +3492,7 @@ proxy_read_timeout 180s;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; apt-get clean autoclean &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; rm -rf /var/lib/apt/lists/*&lt;span style="color:#bf616a"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker build -t e7hnr8ov/oracle-instantclient:alpine /opt/instantclient
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="dockerfile-arm"&gt;Dockerfile (arm)&lt;a class="td-heading-self-link" href="#dockerfile-arm" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="dockerfile-arm"&gt;Dockerfile (arm)&lt;a class="td-heading-self-link" href="#dockerfile-arm" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vi /opt/instantclient/Dockerfile
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-dockerfile" data-lang="dockerfile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;FROM&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;python:alpine&lt;/span&gt;&lt;span style="color:#bf616a"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bf616a"&gt;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;ENV&lt;/span&gt; TZ Asia/Seoul&lt;span style="color:#bf616a"&gt;
@@ -3515,11 +3516,13 @@ proxy_read_timeout 180s;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; apk del curl &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; rm /var/cache/apk/*&lt;span style="color:#bf616a"&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker build -t e7hnr8ov/oracle-instantclient:alpine /opt/instantclient
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="crond"&gt;crond&lt;a class="td-heading-self-link" href="#crond" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;일정 기간 db 유휴 시 데이터 삭제를 공지하고 있으므로 매일 테스트 스키마를 갱신하도록 구성. &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="host-구성"&gt;host 구성&lt;a class="td-heading-self-link" href="#host-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="crond"&gt;crond&lt;a class="td-heading-self-link" href="#crond" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;일정 기간 db 유휴 시 데이터 삭제를 공지하고 있으므로 매일 테스트 스키마를 갱신하도록 구성 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;
 
  
  
+
  
 &lt;ul class="nav nav-tabs" id="tabs-0" role="tablist"&gt;
  &lt;li class="nav-item"&gt;

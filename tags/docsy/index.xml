@@ -135,8 +135,9 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;...&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="favicon"&gt;favicon&lt;a class="td-heading-self-link" href="#favicon" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;/opt/hugo/data/static/favicons/favicon.ico
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="웹사이트-색인-등록"&gt;웹사이트 색인 등록&lt;a class="td-heading-self-link" href="#%ec%9b%b9%ec%82%ac%ec%9d%b4%ed%8a%b8-%ec%83%89%ec%9d%b8-%eb%93%b1%eb%a1%9d" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="애널리틱스색인-등록"&gt;애널리틱스/색인 등록&lt;a class="td-heading-self-link" href="#%ec%95%a0%eb%84%90%eb%a6%ac%ed%8b%b1%ec%8a%a4%ec%83%89%ec%9d%b8-%eb%93%b1%eb%a1%9d" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href="https://analytics.google.com/analytics"&gt;Google Analytics&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://search.google.com/search-console"&gt;Google Search Console&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://searchadvisor.naver.com/"&gt;네이버 서치 어드바이저&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://register.search.daum.net/index.daum"&gt;다음 검색 등록&lt;/a&gt;&lt;/li&gt;

@@ -952,10 +952,7 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
 &lt;pre class="mermaid"&gt;graph TB
  subgraph gvp6nx1a
  B[authelia] &amp;lt;-- proxy --&amp;gt; C[nginx]
- B1[privatebin] &amp;lt;-- proxy --&amp;gt; B
- B2[webtop] &amp;lt;-- proxy --&amp;gt; B
- B3[esportshlper] &amp;lt;-- proxy --&amp;gt; B
- B4[g4f] &amp;lt;-- proxy --&amp;gt; B
+ B1[apps] &amp;lt;-- proxy --&amp;gt; B
  D1[apps] &amp;lt;-- proxy --&amp;gt; C[nginx]
  end&lt;/pre&gt;
 &lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
@@ -1742,8 +1739,7 @@ proxy_read_timeout 180s;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="license"&gt;License&lt;a class="td-heading-self-link" href="#license" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;상업적 이용 제한 없음&lt;/p&gt;</description></item><item><title>alist</title><link>https://dntco43u.github.io/apps/alist/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/alist/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/alist-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
- A1[teambition] -- mount --- B[alist]
- A2[baidunetdisk] -- mount --- B[alist]
+ A1[webdrives] -- mount --- B[alist]
  subgraph gvp6nx1a
  B &amp;lt;-- proxy --&amp;gt; C[nginx]
  end

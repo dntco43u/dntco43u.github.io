@@ -2,10 +2,7 @@
 &lt;pre class="mermaid"&gt;graph TB
  subgraph gvp6nx1a
  B[authelia] &amp;lt;-- proxy --&amp;gt; C[nginx]
- B1[privatebin] &amp;lt;-- proxy --&amp;gt; B
- B2[webtop] &amp;lt;-- proxy --&amp;gt; B
- B3[esportshlper] &amp;lt;-- proxy --&amp;gt; B
- B4[g4f] &amp;lt;-- proxy --&amp;gt; B
+ B1[apps] &amp;lt;-- proxy --&amp;gt; B
  D1[apps] &amp;lt;-- proxy --&amp;gt; C[nginx]
  end&lt;/pre&gt;
 &lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;

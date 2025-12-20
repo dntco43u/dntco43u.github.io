@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>alist on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/alist/</link><description>Recent content in alist on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 08 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/alist/index.xml" rel="self" type="application/rss+xml"/><item><title>alist</title><link>https://dntco43u.github.io/apps/alist/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/alist/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/alist-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
- A1[teambition] -- mount --- B[alist]
- A2[baidunetdisk] -- mount --- B[alist]
+ A1[webdrives] -- mount --- B[alist]
  subgraph gvp6nx1a
  B &amp;lt;-- proxy --&amp;gt; C[nginx]
  end

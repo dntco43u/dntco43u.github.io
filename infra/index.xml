@@ -222,11 +222,17 @@ d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*ERROR|SEVERE|CRITICAL
 &lt;p&gt;Error : 1031, Position : 0, SQL = ALTER SESSION SET &amp;ldquo;_optimizer_push_pred_cost_based&amp;rdquo; = FALSE, Original SQL = ALTER SESSION SET &amp;ldquo;_optimizer_push_pred_cost_based&amp;rdquo; = FALSE, Error Message = ORA-01031: 권한이 불충분합니다&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;dbeaver ui에서 Edit Connection -&amp;gt; Connection settings -&amp;gt; Oracle properties 탭 -&amp;gt; Use metadata queries optimizer 체크 해제&lt;/p&gt;</description></item><item><title>github</title><link>https://dntco43u.github.io/infra/github/</link><pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/github/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/github-logo.webp#center" alt="image"&gt;&lt;/p&gt;
-&lt;h2 id="gitbash-구성"&gt;gitbash 구성&lt;a class="td-heading-self-link" href="#gitbash-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi ~/.bashrc
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;TITLEPREFIX&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;$(echo &amp;#34;$USERNAME&amp;#34;@&amp;#34;$COMPUTERNAME&amp;#34; | tr &amp;#39;[:upper:]&amp;#39; &amp;#39;[:lower:]&amp;#39;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;cd ~/workspace&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="ssh-구성"&gt;ssh 구성&lt;a class="td-heading-self-link" href="#ssh-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="key-구성"&gt;key 구성&lt;a class="td-heading-self-link" href="#key-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class="mermaid"&gt;graph TB
+ subgraph gvp6nx1a
+ A[server] &amp;lt;-- ssh-keygen --&amp;gt; B1[ssh-key]
+ A[server] &amp;lt;-- gpg --&amp;gt; B2[gpg-key]
+ end
+ A &amp;lt;-- ssh --&amp;gt; C[client]
+ C &amp;lt;-- ssh --&amp;gt; D[github]
+ A &amp;lt;-- ssh --&amp;gt; D&lt;/pre&gt;
+&lt;h3 id="ssh"&gt;ssh&lt;a class="td-heading-self-link" href="#ssh" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;키 생성&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mkdir -p ~/ssh_keys &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;ssh-keygen -t ed25519 -P &lt;span style="color:#a3be8c"&gt;&amp;#34;&amp;#34;&lt;/span&gt; -C github-eddsa-key-&lt;span style="color:#81a1c1;font-weight:bold"&gt;$(&lt;/span&gt;date +%Y%m%d&lt;span style="color:#81a1c1;font-weight:bold"&gt;)&lt;/span&gt; -f ~/ssh_keys/dntco43u@github &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;mv ~/ssh_keys/dntco43u@github ~/ssh_keys/dntco43u@github.pem &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\

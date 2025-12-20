@@ -248,7 +248,8 @@ d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*ERROR|SEVERE|CRITICAL
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;ssh -T git@github.com
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;Hi dntco43u! You&amp;#39;ve successfully authenticated, but GitHub does not provide shell access.
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;서버에 원본 키 보관 (optional)&lt;/p&gt;</description></item><item><title>PoorMansTSqlFormatter</title><link>https://dntco43u.github.io/infra/poormans-tsql-formatter/</link><pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/poormans-tsql-formatter/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/sh-logo.webp#center" alt="image"&gt;&lt;/p&gt;
-&lt;h2 id="dbeaver-구성"&gt;dbeaver 구성&lt;a class="td-heading-self-link" href="#dbeaver-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="windows-구성"&gt;windows 구성&lt;a class="td-heading-self-link" href="#windows-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="개요"&gt;개요&lt;a class="td-heading-self-link" href="#%ea%b0%9c%ec%9a%94" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;들여쓰기 탭 대신 공백 2자리&lt;/li&gt;
 &lt;li&gt;키워드 표준화&lt;/li&gt;
@@ -259,6 +260,7 @@ d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*ERROR|SEVERE|CRITICAL
 &lt;li&gt;BETWEEN 키워드 행 확장 거부&lt;/li&gt;
 &lt;li&gt;IN 키워드 행 확장 거부&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id="dbeaver"&gt;dbeaver&lt;a class="td-heading-self-link" href="#dbeaver" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -268,12 +270,12 @@ d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*ERROR|SEVERE|CRITICAL
  &lt;/thead&gt;
  &lt;tbody&gt;
  &lt;tr&gt;
- &lt;td&gt;Formatter&lt;/td&gt;
- &lt;td&gt;External formatter&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
  &lt;td&gt;command line&lt;/td&gt;
  &lt;td&gt;&amp;ldquo;c:\Users\dev\AppData\Roaming\SqlFormatter\SqlFormatter.exe&amp;rdquo; /is:&amp;quot; &amp;quot; /sk- /uk /st:0 /sac /ae /ebc- /eil-&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Formatter&lt;/td&gt;
+ &lt;td&gt;External formatter&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;Use temp file&lt;/td&gt;
@@ -317,7 +319,7 @@ d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*ERROR|SEVERE|CRITICAL
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;GROUP&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;BY&lt;/span&gt; table1&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;id
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;,&lt;/span&gt; table2&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;number&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;ORDER&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;BY&lt;/span&gt; table1&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;id&lt;span style="color:#eceff4"&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="command-options"&gt;command options&lt;a class="td-heading-self-link" href="#command-options" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="command-options"&gt;command options&lt;a class="td-heading-self-link" href="#command-options" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -408,10 +410,8 @@ d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*ERROR|SEVERE|CRITICAL
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id="troubleshooting"&gt;Troubleshooting&lt;a class="td-heading-self-link" href="#troubleshooting" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;div class="alert alert-warning" role="alert"&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Unrecognized arguments found!&lt;/p&gt;</description></item><item><title>keepass</title><link>https://dntco43u.github.io/infra/keepass/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/keepass/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/keepass-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="license"&gt;License&lt;a class="td-heading-self-link" href="#license" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;상업적 이용 제한 없음&lt;/p&gt;</description></item><item><title>keepass</title><link>https://dntco43u.github.io/infra/keepass/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/keepass/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/keepass-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;h2 id="openwrt-포트-개방"&gt;openwrt 포트 개방&lt;a class="td-heading-self-link" href="#openwrt-%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /etc/config/firewall
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code class="language-conf" data-lang="conf"&gt;...

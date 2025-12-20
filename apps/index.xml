@@ -911,7 +911,8 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
  B4[g4f] &amp;lt;-- proxy --&amp;gt; B
  D1[apps] &amp;lt;-- proxy --&amp;gt; C[nginx]
  end&lt;/pre&gt;
-&lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/authelia/docker-compose.yml
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yml" data-lang="yml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;services&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;authelia&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
@@ -930,7 +931,7 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;networks&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;dev&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;external&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;true&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="configurationyml"&gt;configuration.yml&lt;a class="td-heading-self-link" href="#configurationyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="configurationyml"&gt;configuration.yml&lt;a class="td-heading-self-link" href="#configurationyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -1047,8 +1048,8 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;tls&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;skip_verify&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;false&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;minimum_version&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#39;TLS1.2&amp;#39;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="users_databaseyml"&gt;users_database.yml&lt;a class="td-heading-self-link" href="#users_databaseyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;암호 hash 생성.&lt;/p&gt;</description></item><item><title>dashy</title><link>https://dntco43u.github.io/apps/dashy/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/dashy/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/dashy-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="users_databaseyml"&gt;users_database.yml&lt;a class="td-heading-self-link" href="#users_databaseyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;암호 hash 생성&lt;/p&gt;</description></item><item><title>dashy</title><link>https://dntco43u.github.io/apps/dashy/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/dashy/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/dashy-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://dntco43u.github.io/images/dashy-1.webp" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
  subgraph cloud

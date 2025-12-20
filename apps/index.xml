@@ -913,9 +913,9 @@ REVERSE_PROXY_TRUSTED_PROXIES = *
 &lt;p&gt;PermissionError: [Errno 13] Permission denied: &amp;lsquo;/data/logs/errors.log&amp;rsquo;&lt;/p&gt;</description></item><item><title>authelia</title><link>https://dntco43u.github.io/apps/authelia/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/authelia/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/authelia-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph TB
  subgraph gvp6nx1a
- B[authelia] &amp;lt;-- proxy --&amp;gt; C[nginx]
+ B[authelia] &amp;lt;-- auth --&amp;gt; C[nginx]
  B1[apps] &amp;lt;-- proxy --&amp;gt; B
- D1[apps] &amp;lt;-- proxy --&amp;gt; C[nginx]
+ D1[apps] &amp;lt;-- auth --&amp;gt; C[nginx]
  end&lt;/pre&gt;
 &lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;

@@ -51,13 +51,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="디스크-mount"&gt;디스크 mount&lt;a class="td-heading-self-link" href="#%eb%94%94%ec%8a%a4%ed%81%ac-mount" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
 &lt;blockquote&gt;
-&lt;p&gt;기본적으로 유일한 방법은 FAQ에 설명 된대로 &amp;ldquo;allocsize&amp;quot;마운트 옵션을 사용하는 것입니다.
-InnoDB는 최대 16kB의 64페이지를 읽으므로 &amp;ldquo;allocsize=1M&amp;quot;이 가장 좋습니다.
-고객과 마찬가지로 많은 DBA 또는 시스템 관리자도 이러한 동작을 인식하지 못할 수 있으며 실행 중인 시스템에서만 감지할 수 있습니다.
-슬프게도, 나는 그것이 효과가 없었다고 말해야합니다. 미리 할당 된 공간의 크기는 원래 실행에서와 같이 계속 커졌습니다.
-더 나쁜 것은이 명령을 실행 한 후 시작한 실행에도 영향을 미치지 않았다는 것입니다.
-이는 마운트된 XFS 파일 시스템에 대해 &amp;ldquo;allocsize&amp;rdquo; 값을 변경할 수 없으며, 마운트 시 해당 값이 마운트 해제될 때까지 유효하다는 것을 증명합니다.
-마운트 해제 한 다음 새로 마운트하여 &amp;ldquo;allocsize = 1M&amp;quot;을 제공 할 때만 고정 크기가 사전 할당 금액으로 표시되었습니다.
+&lt;p&gt;기본적으로 유일한 방법은 FAQ에 설명 된대로 &amp;ldquo;allocsize&amp;quot;마운트 옵션을 사용하는 것입니다.&lt;br&gt;
+InnoDB는 최대 16kB의 64페이지를 읽으므로 &amp;ldquo;allocsize=1M&amp;quot;이 가장 좋습니다.&lt;br&gt;
+고객과 마찬가지로 많은 DBA 또는 시스템 관리자도 이러한 동작을 인식하지 못할 수 있으며 실행 중인 시스템에서만 감지할 수 있습니다.&lt;br&gt;
+슬프게도, 나는 그것이 효과가 없었다고 말해야합니다. 미리 할당 된 공간의 크기는 원래 실행에서와 같이 계속 커졌습니다.&lt;br&gt;
+더 나쁜 것은이 명령을 실행 한 후 시작한 실행에도 영향을 미치지 않았다는 것입니다.&lt;br&gt;
+이는 마운트된 XFS 파일 시스템에 대해 &amp;ldquo;allocsize&amp;rdquo; 값을 변경할 수 없으며, 마운트 시 해당 값이 마운트 해제될 때까지 유효하다는 것을 증명합니다.&lt;br&gt;
+마운트 해제 한 다음 새로 마운트하여 &amp;ldquo;allocsize = 1M&amp;quot;을 제공 할 때만 고정 크기가 사전 할당 금액으로 표시되었습니다.&lt;br&gt;
 DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료를 피할 수 없음을 의미합니다. (물론 Galera 클러스터에 대해 이야기하면 노드를 한 번에 하나씩 처리 할 수 있기 때문에 시스템을 계속 사용할 수 있습니다.)&lt;/p&gt;</description></item><item><title>bash</title><link>https://dntco43u.github.io/infra/bash/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/bash/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/bash-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;h2 id="파일별-구분"&gt;파일별 구분&lt;a class="td-heading-self-link" href="#%ed%8c%8c%ec%9d%bc%eb%b3%84-%ea%b5%ac%eb%b6%84" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;table&gt;

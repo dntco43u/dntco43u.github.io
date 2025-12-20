@@ -412,6 +412,13 @@ d{4}[\\/-]\\d{2}[\\/-]\\d{2}\\s\\d{2}:\\d{2}:\\d{2}.*ERROR|SEVERE|CRITICAL
 &lt;/table&gt;
 &lt;h2 id="license"&gt;License&lt;a class="td-heading-self-link" href="#license" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;상업적 이용 제한 없음&lt;/p&gt;</description></item><item><title>keepass</title><link>https://dntco43u.github.io/infra/keepass/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/keepass/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/keepass-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;pre class="mermaid"&gt;graph LR
+ subgraph agq3mbw2
+ A[openwrt] --- B1[keepass.kdbx]
+	end
+	A ---- D[duckdns]
+	D &amp;lt;-- ssh --&amp;gt; C1[client]
+	C1 --- C2[keepass.keyx]&lt;/pre&gt;
 &lt;h2 id="openwrt-포트-개방"&gt;openwrt 포트 개방&lt;a class="td-heading-self-link" href="#openwrt-%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /etc/config/firewall
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code class="language-conf" data-lang="conf"&gt;...

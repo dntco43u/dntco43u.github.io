@@ -6,6 +6,7 @@
  C1[prod-server-github-pages] &amp;lt;-- https --&amp;gt; D[client]
  C &amp;lt;-- https --&amp;gt; D
  B &amp;lt;-- git --&amp;gt; C1&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/hugo-1.webp" alt="image"&gt;&lt;/p&gt;
 &lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;

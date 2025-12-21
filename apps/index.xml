@@ -392,7 +392,14 @@ logrotate 재구성을 위해 host에 mount&lt;/p&gt;</description></item><item>
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
 &lt;p&gt;&lt;a href="https://www.docsy.dev/"&gt;https://www.docsy.dev/&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>jackett</title><link>https://dntco43u.github.io/apps/jackett/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/jackett/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/jackett-logo.webp#center" alt="image"&gt;&lt;/p&gt;
-&lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;pre class="mermaid"&gt;graph LR
+ subgraph gvp6nx1a
+ B[jackett] &amp;lt;-- proxy --&amp;gt; C[nginx]
+ B &amp;lt;-- https/api --&amp;gt; E[qbittorrent]
+ end
+ C &amp;lt;-- https --&amp;gt; D[client]&lt;/pre&gt;
+&lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/jackett/docker-compose.yml
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yml" data-lang="yml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;services&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;jackett&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
@@ -415,7 +422,8 @@ logrotate 재구성을 위해 host에 mount&lt;/p&gt;</description></item><item>
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;networks&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;dev&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;external&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;true&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="logrotate"&gt;logrotate&lt;a class="td-heading-self-link" href="#logrotate" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="host-구성"&gt;host 구성&lt;a class="td-heading-self-link" href="#host-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="logrotate"&gt;logrotate&lt;a class="td-heading-self-link" href="#logrotate" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vi /etc/logrotate.d/jackett
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex="0"&gt;&lt;code&gt;/opt/jackett/Jackett/log.txt*
 /opt/jackett/Jackett/updater.txt* {

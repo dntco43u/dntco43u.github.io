@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pxeboot on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/pxeboot/</link><description>Recent content in pxeboot on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><atom:link href="https://dntco43u.github.io/tags/pxeboot/index.xml" rel="self" type="application/rss+xml"/><item><title>netbootxyz</title><link>https://dntco43u.github.io/apps/netbootxyz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/netbootxyz/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/netbootxyz-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
+ A1 -- tftp --&amp;gt; A2[client]
  subgraph agq3mbw2
- A2[client] &amp;lt;-- tftp --&amp;gt; A1
- A1[dhcp] &amp;lt;-- tftp --&amp;gt; B[netbootxyz]
+ B[netbootxyz] -- tftp --&amp;gt; A1[dhcp]
  subgraph sj9n7air
  B &amp;lt;-- proxy --&amp;gt; C[nginx]
  end

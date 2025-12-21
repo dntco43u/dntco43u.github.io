@@ -147,9 +147,9 @@ config service &amp;#39;duckdns&amp;#39;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;...
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/keepass-1.webp" alt="image"&gt;&lt;/p&gt;</description></item><item><title>netbootxyz</title><link>https://dntco43u.github.io/apps/netbootxyz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/netbootxyz/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/netbootxyz-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
+ A1 -- tftp --&amp;gt; A2[client]
  subgraph agq3mbw2
- A2[client] &amp;lt;-- tftp --&amp;gt; A1
- A1[dhcp] &amp;lt;-- tftp --&amp;gt; B[netbootxyz]
+ B[netbootxyz] -- tftp --&amp;gt; A1[dhcp]
  subgraph sj9n7air
  B &amp;lt;-- proxy --&amp;gt; C[nginx]
  end

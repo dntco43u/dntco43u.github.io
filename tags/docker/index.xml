@@ -1257,10 +1257,15 @@ logrotate 재구성을 위해 host에 mount&lt;/p&gt;</description></item><item>
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; - --collector.interrupts
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;restart&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; unless-stopped
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="webyml"&gt;web.yml&lt;a class="td-heading-self-link" href="#webyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;http basic auth 구성&lt;/p&gt;</description></item><item><title>portainer</title><link>https://dntco43u.github.io/apps/portainer/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/portainer/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/portainer-logo.webp#center" alt="image"&gt;&lt;/p&gt;
-&lt;h2 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;http basic auth 구성&lt;/p&gt;</description></item><item><title>portainer</title><link>https://dntco43u.github.io/apps/portainer/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/portainer/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/portainer-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;pre class="mermaid"&gt;graph LR
+ subgraph gvp6nx1a
+ A1[docker.sock] ---&amp;gt; B
+ B[portainer] &amp;lt;-- proxy --&amp;gt; C[nginx]
+ end
+ C &amp;lt;-- https --&amp;gt; D[client]&lt;/pre&gt;
+&lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="docker-composeyml"&gt;docker-compose.yml&lt;a class="td-heading-self-link" href="#docker-composeyml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/portainer/docker-compose.yml
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yml" data-lang="yml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;services&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;portainer&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;

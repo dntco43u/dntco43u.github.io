@@ -2313,6 +2313,15 @@ proxy_read_timeout 180s;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;PersistentKeepalive&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;25&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="테스트"&gt;테스트&lt;a class="td-heading-self-link" href="#%ed%85%8c%ec%8a%a4%ed%8a%b8" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;dns 누출 확인&lt;/p&gt;</description></item><item><title>netbootxyz</title><link>https://dntco43u.github.io/apps/netbootxyz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/netbootxyz/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/netbootxyz-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;pre class="mermaid"&gt;graph LR
+ subgraph agq3mbw2
+ A2[client] &amp;lt;-- tftp --&amp;gt; A1
+ A1[dhcp] &amp;lt;-- tftp --&amp;gt; B[netbootxyz]
+ subgraph sj9n7air
+ B &amp;lt;-- proxy --&amp;gt; C[nginx]
+ end
+ end
+ C &amp;lt;-- https --&amp;gt; D[client]&lt;/pre&gt;
 &lt;h2 id="host-구성"&gt;host 구성&lt;a class="td-heading-self-link" href="#host-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="포트-개방"&gt;포트 개방&lt;a class="td-heading-self-link" href="#%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;

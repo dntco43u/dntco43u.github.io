@@ -4235,6 +4235,15 @@ proxy_read_timeout 180s;
 &lt;/ul&gt;
 &lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
 &lt;p&gt;rockylinux는 debian 수준으로 가볍다&lt;/p&gt;</description></item><item><title>netbootxyz</title><link>https://dntco43u.github.io/apps/netbootxyz/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/netbootxyz/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/netbootxyz-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;pre class="mermaid"&gt;graph LR
+ subgraph agq3mbw2
+ A2[client] &amp;lt;-- tftp --&amp;gt; A1
+ A1[dhcp] &amp;lt;-- tftp --&amp;gt; B[netbootxyz]
+ subgraph sj9n7air
+ B &amp;lt;-- proxy --&amp;gt; C[nginx]
+ end
+ end
+ C &amp;lt;-- https --&amp;gt; D[client]&lt;/pre&gt;
 &lt;h2 id="host-구성"&gt;host 구성&lt;a class="td-heading-self-link" href="#host-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="포트-개방"&gt;포트 개방&lt;a class="td-heading-self-link" href="#%ed%8f%ac%ed%8a%b8-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;

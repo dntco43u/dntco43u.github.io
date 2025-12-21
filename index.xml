@@ -688,9 +688,14 @@ logrotate 재구성을 위해 host에 mount&lt;/p&gt;</description></item><item>
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;dev&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;external&lt;/span&gt;&lt;span style="color:#eceff4"&gt;:&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;true&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="local-configyaml"&gt;&lt;del&gt;local-config.yaml&lt;/del&gt;&lt;a class="td-heading-self-link" href="#local-configyaml" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;s3에 적재하는 구성&lt;/p&gt;</description></item><item><title>navidrome</title><link>https://dntco43u.github.io/apps/navidrome/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/navidrome/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/navidrome-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;s3에 적재하는 구성&lt;/p&gt;</description></item><item><title>navidrome</title><link>https://dntco43u.github.io/apps/navidrome/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/navidrome/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/navidrome-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;pre class="mermaid"&gt;graph LR
+ A1[webdrives] &amp;lt;---&amp;gt; B[navidrome]
+ subgraph cloud
+ B &amp;lt;---&amp;gt; C[nginx]
+ end
+ C &amp;lt;-- https --&amp;gt; D[client]&lt;/pre&gt;
+&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/navidrome-1.webp" alt="image"&gt;&lt;/p&gt;
 &lt;h2 id="env"&gt;.env&lt;a class="td-heading-self-link" href="#env" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/navidrome/.env
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;ND_SPOTIFY_ID&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;e*******************************&lt;/span&gt;

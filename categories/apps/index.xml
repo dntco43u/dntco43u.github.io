@@ -1361,9 +1361,8 @@ logrotate 재구성을 위해 host에 mount&lt;/p&gt;</description></item><item>
  client_max_body_size 0;
  }
 ...
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="windows-구성"&gt;windows 구성&lt;a class="td-heading-self-link" href="#windows-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id="qv2ray"&gt;qv2ray&lt;a class="td-heading-self-link" href="#qv2ray" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/xray-1.webp" alt="image"&gt;&lt;/p&gt;</description></item><item><title>fail2ban</title><link>https://dntco43u.github.io/apps/fail2ban/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/fail2ban/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/fail2ban-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="테스트"&gt;테스트&lt;a class="td-heading-self-link" href="#%ed%85%8c%ec%8a%a4%ed%8a%b8" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;dns 누출 확인&lt;/p&gt;</description></item><item><title>fail2ban</title><link>https://dntco43u.github.io/apps/fail2ban/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/fail2ban/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/fail2ban-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
  subgraph gvp6nx1a
  A1[sshd] -- log --&amp;gt; B[fail2ban]

@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>개발 on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/dev/</link><description>Recent content in 개발 on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/dev/index.xml" rel="self" type="application/rss+xml"/><item><title>azvj6fml</title><link>https://dntco43u.github.io/dev/azvj6fml/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/azvj6fml/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/vue-js-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>개발 on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/dev/</link><description>Recent content in 개발 on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/dev/index.xml" rel="self" type="application/rss+xml"/><item><title>azvj6fml</title><link>https://dntco43u.github.io/dev/azvj6fml/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/azvj6fml/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/vue-js-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/azvj6fml"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="dockerfile"&gt;Dockerfile&lt;a class="td-heading-self-link" href="#dockerfile" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/azvj6fml/Dockerfile
@@ -78,8 +78,10 @@
  docker restart azvj6fml &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 || true
  endscript
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="데모-페이지"&gt;데모 페이지 &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#%eb%8d%b0%eb%aa%a8-%ed%8e%98%ec%9d%b4%ec%a7%80" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="데모-페이지"&gt;데모 페이지&lt;a class="td-heading-self-link" href="#%eb%8d%b0%eb%aa%a8-%ed%8e%98%ec%9d%b4%ec%a7%80" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img src="https://dntco43u.github.io/images/azvj6fml-1.webp" alt="image"&gt;&lt;/p&gt;</description></item><item><title>ja2-helper</title><link>https://dntco43u.github.io/dev/ja2-helper/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/ja2-helper/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/ahk-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/ja2_helper"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="autohotkey"&gt;autohotkey&lt;a class="td-heading-self-link" href="#autohotkey" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="shortcuts"&gt;Shortcuts&lt;a class="td-heading-self-link" href="#shortcuts" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
@@ -3086,6 +3088,8 @@
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
 &lt;p&gt;&lt;a href="https://github.com/dntco43u/ja2_helper/blob/main/lib/Common.ahk"&gt;https://github.com/dntco43u/ja2_helper/blob/main/lib/Common.ahk&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>promocode-helper</title><link>https://dntco43u.github.io/dev/promocode-helper/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/promocode-helper/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/ahk-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/promocode_helper"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="autohotkey"&gt;autohotkey&lt;a class="td-heading-self-link" href="#autohotkey" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="shortcuts"&gt;Shortcuts&lt;a class="td-heading-self-link" href="#shortcuts" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
@@ -3779,6 +3783,8 @@
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
 &lt;p&gt;&lt;a href="https://github.com/dntco43u/promocode_helper/blob/main/promocode_helper.ahk"&gt;https://github.com/dntco43u/promocode_helper/blob/main/promocode_helper.ahk&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>rename-helper</title><link>https://dntco43u.github.io/dev/rename-helper/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/rename-helper/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/ahk-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/rename_helper"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="autohotkey"&gt;autohotkey&lt;a class="td-heading-self-link" href="#autohotkey" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="shortcuts"&gt;Shortcuts&lt;a class="td-heading-self-link" href="#shortcuts" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
@@ -4299,6 +4305,8 @@
 &lt;ol&gt;
 &lt;li id="fn:1"&gt;
 &lt;p&gt;&lt;a href="https://github.com/dntco43u/rename_helper/blob/main/lib/Common.ahk"&gt;https://github.com/dntco43u/rename_helper/blob/main/lib/Common.ahk&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>thehell2-helper</title><link>https://dntco43u.github.io/dev/thehell2-helper/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/thehell2-helper/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/ahk-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/thehell2_helper"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="thehell2-구성"&gt;thehell2 구성&lt;a class="td-heading-self-link" href="#thehell2-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="configini"&gt;config.ini&lt;a class="td-heading-self-link" href="#configini" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;set screenwidth 1280&lt;/span&gt;
@@ -8829,6 +8837,8 @@
 &lt;div class="alert alert-warning" role="alert"&gt;
 &lt;blockquote&gt;
 &lt;p&gt;사용자 입력 차단 안될 때&lt;/p&gt;</description></item><item><title>torchlight2-helper</title><link>https://dntco43u.github.io/dev/torchlight2-helper/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/torchlight2-helper/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/ahk-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/torchlight2_helper"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="autohotkey"&gt;autohotkey&lt;a class="td-heading-self-link" href="#autohotkey" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="shortcuts"&gt;Shortcuts&lt;a class="td-heading-self-link" href="#shortcuts" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;table&gt;
@@ -8973,6 +8983,8 @@
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;LOGIN_PASSWORD&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;W***************************************************************&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="구성"&gt;구성&lt;a class="td-heading-self-link" href="#%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;따로 분리한 구성 없이 소스에 하드코딩됨. 적용할 구성 외에 주석 처리할 것&lt;/p&gt;</description></item><item><title>bdkqpr0x</title><link>https://dntco43u.github.io/dev/bdkqpr0x/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/bdkqpr0x/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/spring-boot-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/bdkqpr0x"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="dockerfile"&gt;Dockerfile&lt;a class="td-heading-self-link" href="#dockerfile" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/bdkqpr0x/Dockerfile
@@ -9090,6 +9102,8 @@
 &lt;div class="alert alert-warning" role="alert"&gt;
 &lt;blockquote&gt;
 &lt;p&gt;=&amp;gt; ERROR [2/5] RUN adduser &amp;ndash;no-create-home -u 1000 dev&lt;/p&gt;</description></item><item><title>inven-helper</title><link>https://dntco43u.github.io/dev/inven_helper/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/inven_helper/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/selenium-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/inven_helper"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="env"&gt;.env&lt;a class="td-heading-self-link" href="#env" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/python/.env
@@ -9327,6 +9341,8 @@
 &lt;div class="alert alert-warning" role="alert"&gt;
 &lt;blockquote&gt;
 &lt;p&gt;간헐적으로 실행 도중 종료&lt;/p&gt;</description></item><item><title>navergame-helper</title><link>https://dntco43u.github.io/dev/navergame_helper/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/navergame_helper/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/selenium-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/navergame_helper"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="env"&gt;.env&lt;a class="td-heading-self-link" href="#env" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/python/.env
@@ -9614,6 +9630,8 @@
 &lt;p&gt;간헐적으로 실행 도중 종료&lt;/p&gt;</description></item><item><title>tag-edit (작성 중)</title><link>https://dntco43u.github.io/dev/tag-edit/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/tag-edit/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;img src="https://dntco43u.github.io/images/vue-js-logo.webp#center" alt="image"&gt;&lt;/p&gt;</description></item><item><title>med-exam</title><link>https://dntco43u.github.io/dev/med-exam/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/med-exam/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/grafana-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/med_exam"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="env"&gt;.env&lt;a class="td-heading-self-link" href="#env" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/python/.env
@@ -9669,6 +9687,8 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; python /opt/python/med_exam.py &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$@&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="데모-페이지"&gt;데모 페이지 &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#%eb%8d%b0%eb%aa%a8-%ed%8e%98%ec%9d%b4%ec%a7%80" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img src="https://dntco43u.github.io/images/med-exam-1.webp" alt="image"&gt;&lt;/p&gt;</description></item><item><title>utils.sh</title><link>https://dntco43u.github.io/dev/utils-sh/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/utils-sh/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/sh-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/s6h7k8rv"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="host-구성"&gt;host 구성&lt;a class="td-heading-self-link" href="#host-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="의존-패키지-설치"&gt;의존 패키지 설치&lt;a class="td-heading-self-link" href="#%ec%9d%98%ec%a1%b4-%ed%8c%a8%ed%82%a4%ec%a7%80-%ec%84%a4%ec%b9%98" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 

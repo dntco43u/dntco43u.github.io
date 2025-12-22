@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>docker on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/docker/</link><description>Recent content in docker on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>azvj6fml</title><link>https://dntco43u.github.io/dev/azvj6fml/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/azvj6fml/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/vue-js-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>docker on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/docker/</link><description>Recent content in docker on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 15 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>azvj6fml</title><link>https://dntco43u.github.io/dev/azvj6fml/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/azvj6fml/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/vue-js-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/azvj6fml"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="dockerfile"&gt;Dockerfile&lt;a class="td-heading-self-link" href="#dockerfile" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/azvj6fml/Dockerfile
@@ -78,7 +78,7 @@
  docker restart azvj6fml &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 || true
  endscript
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="데모-페이지"&gt;데모 페이지 &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#%eb%8d%b0%eb%aa%a8-%ed%8e%98%ec%9d%b4%ec%a7%80" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="데모-페이지"&gt;데모 페이지&lt;a class="td-heading-self-link" href="#%eb%8d%b0%eb%aa%a8-%ed%8e%98%ec%9d%b4%ec%a7%80" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;img src="https://dntco43u.github.io/images/azvj6fml-1.webp" alt="image"&gt;&lt;/p&gt;</description></item><item><title>esportshelper (deprecated)</title><link>https://dntco43u.github.io/apps/esportshelper/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/esportshelper/</guid><description>&lt;div class="alert alert-warning" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Deprecated&lt;/div&gt;
 &lt;blockquote&gt;
 &lt;p&gt;lolesports.com 로그인 페이지 변경에 대응하지 못함
@@ -1528,6 +1528,8 @@ logrotate 재구성을 위해 host에 mount&lt;/p&gt;</description></item><item>
 ...
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id="테스트"&gt;테스트&lt;a class="td-heading-self-link" href="#%ed%85%8c%ec%8a%a4%ed%8a%b8" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;dns 누출 확인&lt;/p&gt;</description></item><item><title>bdkqpr0x</title><link>https://dntco43u.github.io/dev/bdkqpr0x/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/bdkqpr0x/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/spring-boot-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/bdkqpr0x"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="dockerfile"&gt;Dockerfile&lt;a class="td-heading-self-link" href="#dockerfile" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/bdkqpr0x/Dockerfile

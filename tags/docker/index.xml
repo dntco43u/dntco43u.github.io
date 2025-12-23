@@ -1668,7 +1668,9 @@ logrotate 재구성을 위해 host에 mount&lt;/p&gt;</description></item><item>
 &lt;h2 id="troubleshooting"&gt;Troubleshooting&lt;a class="td-heading-self-link" href="#troubleshooting" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="alert alert-warning" role="alert"&gt;
 &lt;blockquote&gt;
-&lt;p&gt;=&amp;gt; ERROR [2/5] RUN adduser &amp;ndash;no-create-home -u 1000 dev&lt;/p&gt;</description></item><item><title>jdownloader</title><link>https://dntco43u.github.io/apps/jdownloader/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/jdownloader/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/jdownloader-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;=&amp;gt; ERROR [2/5] RUN adduser &amp;ndash;no-create-home -u 1000 dev&lt;/p&gt;</description></item><item><title>tag-edit (작성 중)</title><link>https://dntco43u.github.io/dev/tag-edit/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/tag-edit/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/react-logo.webp#center" alt="image"&gt;&lt;/p&gt;</description></item><item><title>jdownloader</title><link>https://dntco43u.github.io/apps/jdownloader/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/jdownloader/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/jdownloader-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
  A1[my.jdownloader.org] &amp;lt;-- tcp/api --&amp;gt; B[jdownloader]
  A1 &amp;lt;-- https --&amp;gt; D[client]&lt;/pre&gt;

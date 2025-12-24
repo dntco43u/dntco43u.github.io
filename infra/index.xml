@@ -1341,7 +1341,7 @@ DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료
  subgraph iptables
  subgraph bridge-network
  A1[docker/wireguard] &amp;lt;--&amp;gt; B[docker]
- A2[containers] &amp;lt;--&amp;gt; B
+ A2[apps] &amp;lt;--&amp;gt; B
  end
  subgraph host-network
  C[host] &amp;lt;--&amp;gt; C1[package/wireguard]

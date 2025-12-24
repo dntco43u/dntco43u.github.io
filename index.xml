@@ -441,7 +441,7 @@ logrotate 재구성을 위해 host에 mount&lt;/p&gt;</description></item><item>
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#eceff4"&gt;}&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="giscus-댓글"&gt;giscus 댓글 &lt;sup id="fnref:3"&gt;&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#giscus-%eb%8c%93%ea%b8%80" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;테마 템플릿의 구성이 구 버전이라면 새 버전에 맞게 폴더 구조 변경. &lt;code&gt;/layouts/partials/&lt;/code&gt; -&amp;gt; &lt;code&gt;/layouts/_partials/&lt;/code&gt; &lt;sup id="fnref:4"&gt;&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref"&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;테마 템플릿의 구성이 구 버전이라면 새 버전에 맞게 폴더 구조 변경 &lt;code&gt;/layouts/partials/&lt;/code&gt; -&amp;gt; &lt;code&gt;/layouts/_partials/&lt;/code&gt; &lt;sup id="fnref:4"&gt;&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref"&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;br&gt;&lt;/li&gt;
 &lt;li&gt;댓글을 비활성화하고 싶다면 markdown 파라미터에 no_comment: true 추가&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;mv /opt/hugo/data/layouts/partials /opt/hugo/data/layouts/_partials &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
@@ -12317,7 +12317,7 @@ proxy_read_timeout 180s;
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id="troubleshooting"&gt;Troubleshooting&lt;a class="td-heading-self-link" href="#troubleshooting" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;div class="alert alert-warning" role="alert"&gt;
 &lt;blockquote&gt;
-&lt;p&gt;봇 추가 시 속도 하락. (2025-10)&lt;/p&gt;</description></item><item><title>tgdrive/rclone</title><link>https://dntco43u.github.io/infra/tgdrive-rclone/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/tgdrive-rclone/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/rclone-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;봇 추가 시 속도 하락 (2025-10)&lt;/p&gt;</description></item><item><title>tgdrive/rclone</title><link>https://dntco43u.github.io/infra/tgdrive-rclone/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/tgdrive-rclone/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/rclone-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;h2 id="host-구성"&gt;host 구성&lt;a class="td-heading-self-link" href="#host-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="패키지-설치"&gt;패키지 설치 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#%ed%8c%a8%ed%82%a4%ec%a7%80-%ec%84%a4%ec%b9%98" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo dnf -y update &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
@@ -12991,7 +12991,7 @@ proxy_read_timeout 180s;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo rm -rf /opt/immich/db_data &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo mkdir /opt/immich/db_data
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="host-구성"&gt;host 구성&lt;a class="td-heading-self-link" href="#host-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;h3 id="immich-go"&gt;immich-go&lt;a class="td-heading-self-link" href="#immich-go" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
-&lt;p&gt;로컬 폴더에서 immich 서버로 벌크 업로드.&lt;/p&gt;</description></item><item><title>netbootxyz</title><link>https://dntco43u.github.io/apps/netbootxyz/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/netbootxyz/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/netbootxyz-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;로컬 폴더에서 immich 서버로 벌크 업로드&lt;/p&gt;</description></item><item><title>netbootxyz</title><link>https://dntco43u.github.io/apps/netbootxyz/</link><pubDate>Mon, 08 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/netbootxyz/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/netbootxyz-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;pre class="mermaid"&gt;graph LR
  A1 -- tftp --&amp;gt; A2[client]
  subgraph agq3mbw2

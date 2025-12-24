@@ -323,7 +323,7 @@ logrotate 재구성을 위해 host에 mount&lt;/p&gt;</description></item><item>
 &lt;li&gt;개발 서버이며 여기서 편집 후 운영 적용&lt;/li&gt;
 &lt;li&gt;서버 시작 시 배포 폴더 초기화&lt;/li&gt;
 &lt;li&gt;실시간 새로고침&lt;/li&gt;
-&lt;li&gt;baseURL 옵션은 운영 서버 URL 적용 (sitemap.xml 생성에 관여)&lt;/li&gt;
+&lt;li&gt;baseURL 옵션은 운영 서버 URL 적용 (&lt;code&gt;sitemap.xml&lt;/code&gt; 생성에 관여)&lt;/li&gt;
 &lt;li&gt;environment 옵션 production만 googleanalytics 적용&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/hugo/docker-compose.yml

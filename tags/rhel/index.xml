@@ -160,13 +160,13 @@ DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료
 &lt;blockquote&gt;
 &lt;p&gt;Problem 1: package linux-firmware-core-999:20220304-999.13.gitf011ccb4.el8.noarch conflicts with linux-firmware &amp;lt;= 999:20211203-999.10.gitb0e898fb.el8 provided by linux-firmware-20220210-107.git6342082c.el8.noarch&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;firmware 패키지 충돌. 문제 없음.&lt;/p&gt;
+&lt;p&gt;firmware 패키지 충돌. 문제 없음&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="alert alert-warning" role="alert"&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Problem 2: package tuned-profiles-oci-2.18.0-2.0.1.el8.noarch requires tuned = 2.18.0-2.0.1.el8, but none of the providers can be installed&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;xoraclecloud 패키지 누락. 문제 없음.&lt;/p&gt;
+&lt;p&gt;xoraclecloud 패키지 누락. 문제 없음&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="alert alert-warning" role="alert"&gt;
 &lt;blockquote&gt;

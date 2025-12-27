@@ -4,6 +4,7 @@
 **/
 !.env
 !/public
+!/public/
 #/public
 #resources/
 #node_modules/

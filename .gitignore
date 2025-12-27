@@ -2,7 +2,7 @@
 !/*/
 !.gitignore
 **/
-!hugo-gh-pages.yml.yaml
+!.github/**/*
 !.env
 !/public
 !/public/**/*

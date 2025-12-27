@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>code-formatter on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/code-formatter/</link><description>Recent content in code-formatter on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 13 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/code-formatter/index.xml" rel="self" type="application/rss+xml"/><item><title>PoorMansTSqlFormatter</title><link>https://dntco43u.github.io/infra/poormans-tsql-formatter/</link><pubDate>Sat, 13 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/poormans-tsql-formatter/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/sh-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="windows-구성"&gt;windows 구성&lt;a class="td-heading-self-link" href="#windows-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="개요"&gt;개요&lt;a class="td-heading-self-link" href="#%ea%b0%9c%ec%9a%94" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;들여쓰기 탭 대신 공백 2자리&lt;/li&gt;
+&lt;li&gt;키워드 표준화&lt;/li&gt;
+&lt;li&gt;키워드 대문자&lt;/li&gt;
+&lt;li&gt;탭 크기 0&lt;/li&gt;
+&lt;li&gt;콤마 뒤 열 공백 추가&lt;/li&gt;
+&lt;li&gt;파싱 에러 허용&lt;/li&gt;
+&lt;li&gt;BETWEEN 키워드 행 확장 거부&lt;/li&gt;
+&lt;li&gt;IN 키워드 행 확장 거부&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="dbeaver"&gt;dbeaver&lt;a class="td-heading-self-link" href="#dbeaver" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Options&lt;/th&gt;
+ &lt;th&gt;&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;command line&lt;/td&gt;
+ &lt;td&gt;&amp;ldquo;c:\Users\dev\AppData\Roaming\SqlFormatter\SqlFormatter.exe&amp;rdquo; /is:&amp;quot; &amp;quot; /sk- /uk /st:0 /sac /ae /ebc- /eil-&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Formatter&lt;/td&gt;
+ &lt;td&gt;External formatter&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Use temp file&lt;/td&gt;
+ &lt;td&gt;Uncheck &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sql" data-lang="sql"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;SELECT&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;FROM&lt;/span&gt; TABLE1 t
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;WHERE&lt;/span&gt; a &lt;span style="color:#81a1c1"&gt;&amp;gt;&lt;/span&gt; &lt;span style="color:#b48ead"&gt;100&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;AND&lt;/span&gt; b &lt;span style="color:#81a1c1;font-weight:bold"&gt;BETWEEN&lt;/span&gt; &lt;span style="color:#b48ead"&gt;12&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;AND&lt;/span&gt; &lt;span style="color:#b48ead"&gt;45&lt;/span&gt;&lt;span style="color:#eceff4"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;SELECT&lt;/span&gt; t&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;,&lt;/span&gt; j1&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;x
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;,&lt;/span&gt; j2&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;y
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;FROM&lt;/span&gt; TABLE1 t
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;JOIN&lt;/span&gt; JT1 j1 &lt;span style="color:#81a1c1;font-weight:bold"&gt;ON&lt;/span&gt; j1&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;a &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; t&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;a
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;LEFT&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;OUTER&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;JOIN&lt;/span&gt; JT2 j2 &lt;span style="color:#81a1c1;font-weight:bold"&gt;ON&lt;/span&gt; j2&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;a &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; t&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;a
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;AND&lt;/span&gt; j2&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;b &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; j1&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;b
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;WHERE&lt;/span&gt; t&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;xxx &lt;span style="color:#81a1c1;font-weight:bold"&gt;IS&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;NOT&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;NULL&lt;/span&gt;&lt;span style="color:#eceff4"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;DELETE&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;FROM&lt;/span&gt; TABLE1
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;WHERE&lt;/span&gt; a &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#b48ead"&gt;1&lt;/span&gt;&lt;span style="color:#eceff4"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;UPDATE&lt;/span&gt; TABLE1
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;SET&lt;/span&gt; a &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#b48ead"&gt;2&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;WHERE&lt;/span&gt; a &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#b48ead"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;SELECT&lt;/span&gt; table1&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;id
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;,&lt;/span&gt; table2&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;number&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;,&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;SUM&lt;/span&gt;&lt;span style="color:#eceff4"&gt;(&lt;/span&gt;table1&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;amount&lt;span style="color:#eceff4"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;FROM&lt;/span&gt; table1
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;INNER&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;JOIN&lt;/span&gt; table2 &lt;span style="color:#81a1c1;font-weight:bold"&gt;ON&lt;/span&gt; table1&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;id &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; table2&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;table1_id
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;WHERE&lt;/span&gt; table1&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;id &lt;span style="color:#81a1c1;font-weight:bold"&gt;IN&lt;/span&gt; &lt;span style="color:#eceff4"&gt;(&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;SELECT&lt;/span&gt; table1_id
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;FROM&lt;/span&gt; table3
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;WHERE&lt;/span&gt; table3&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;name &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#39;Foo Bar&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;AND&lt;/span&gt; table3&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;type&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#39;unknown_type&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;GROUP&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;BY&lt;/span&gt; table1&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;id
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#eceff4"&gt;,&lt;/span&gt; table2&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;number&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;ORDER&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;BY&lt;/span&gt; table1&lt;span style="color:#eceff4"&gt;.&lt;/span&gt;id&lt;span style="color:#eceff4"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="command-options"&gt;command options&lt;a class="td-heading-self-link" href="#command-options" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Options&lt;/th&gt;
+ &lt;th&gt;Remarks&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;is&lt;/td&gt;
+ &lt;td&gt;indentString (default: \t)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;st&lt;/td&gt;
+ &lt;td&gt;spacesPerTab (default: 4)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;mw&lt;/td&gt;
+ &lt;td&gt;maxLineWidth (default: 999)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;sb&lt;/td&gt;
+ &lt;td&gt;statementBreaks (default: 2)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;cb&lt;/td&gt;
+ &lt;td&gt;clauseBreaks (default: 1)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;tc&lt;/td&gt;
+ &lt;td&gt;trailingCommas (default: false)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;sac&lt;/td&gt;
+ &lt;td&gt;spaceAfterExpandedComma (default: false)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;ebc&lt;/td&gt;
+ &lt;td&gt;expandBetweenConditions (default: true)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;ebe&lt;/td&gt;
+ &lt;td&gt;expandBooleanExpressions (default: true)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;ecs&lt;/td&gt;
+ &lt;td&gt;expandCaseStatements (default: true)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;ecl&lt;/td&gt;
+ &lt;td&gt;expandCommaLists (default: true)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;eil&lt;/td&gt;
+ &lt;td&gt;expandInLists (default: true)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;uk&lt;/td&gt;
+ &lt;td&gt;uppercaseKeywords (default: true)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;sk&lt;/td&gt;
+ &lt;td&gt;standardizeKeywords (default: false)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;ae&lt;/td&gt;
+ &lt;td&gt;allowParsingErrors (default: false)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;e&lt;/td&gt;
+ &lt;td&gt;extensions (default: sql)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;r&lt;/td&gt;
+ &lt;td&gt;recursive (default: false)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;b&lt;/td&gt;
+ &lt;td&gt;backups (default: true)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;b&lt;/td&gt;
+ &lt;td&gt;outputFileOrFolder (default: none; if set, overrides the backup option)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;l&lt;/td&gt;
+ &lt;td&gt;languageCode (default: current if supported or EN; valid values include EN, FR and ES)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="license"&gt;License&lt;a class="td-heading-self-link" href="#license" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;상업적 이용 제한 없음&lt;/p&gt;</description></item></channel></rss>

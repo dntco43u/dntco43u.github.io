@@ -1,0 +1,25 @@
+{{ if not .Params.no_comment }}
+<style type="text/css">
+  .giscus, .giscus-frame { width: 90%; }
+  .container-fluid { height: auto; }
+</style>
+<div class="page-blank">
+  <div class="giscus"></div>
+  <script src="https://giscus.app/client.js"
+  data-repo="{{site.Params.comments.giscus.repo}}"
+  data-repo-id="{{site.Params.comments.giscus.repo_id}}"
+  data-category="{{site.Params.comments.giscus.category}}"
+  data-category-id="{{site.Params.comments.giscus.category_id}}"
+  data-mapping="{{site.Params.comments.giscus.mapping}}"
+  data-strict="{{site.Params.comments.giscus.reactions_enabled}}"
+  data-reactions-enabled="{{site.Params.comments.giscus.reactions_enabled}}"
+  data-emit-metadata="0"
+  data-input-position="{{site.Params.comments.giscus.data_input_position}}"
+  data-theme="{{site.Params.comments.giscus.theme}}"
+  data-lang="{{site.Params.comments.giscus.data_lang}}"
+  crossorigin="anonymous"
+  async>
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://giscus.app/">comments powered by Giscus.</a></noscript>
+</div>
+{{ end }}

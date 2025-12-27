@@ -80,8 +80,8 @@
  docker restart azvj6fml &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 || true
  endscript
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="데모-페이지"&gt;데모 페이지&lt;a class="td-heading-self-link" href="#%eb%8d%b0%eb%aa%a8-%ed%8e%98%ec%9d%b4%ec%a7%80" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/azvj6fml-1.webp" alt="image"&gt;&lt;/p&gt;</description></item><item><title>ja2-helper</title><link>https://dntco43u.github.io/dev/ja2-helper/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/ja2-helper/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/ahk-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;del&gt;## 데모 페이지&lt;/del&gt;
+&lt;img src="https://dntco43u.github.io/images/azvj6fml-1.webp" alt="image"&gt;&lt;/p&gt;</description></item><item><title>ja2-helper</title><link>https://dntco43u.github.io/dev/ja2-helper/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/ja2-helper/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/ahk-logo.webp#center" alt="image"&gt;&lt;/p&gt;
 &lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://github.com/dntco43u/ja2_helper"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="autohotkey"&gt;autohotkey&lt;a class="td-heading-self-link" href="#autohotkey" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;

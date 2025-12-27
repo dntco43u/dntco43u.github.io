@@ -122,8 +122,8 @@
  docker restart azvj6fml &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 || true
  endscript
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="데모-페이지"&gt;데모 페이지&lt;a class="td-heading-self-link" href="#%eb%8d%b0%eb%aa%a8-%ed%8e%98%ec%9d%b4%ec%a7%80" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/azvj6fml-1.webp" alt="image"&gt;&lt;/p&gt;</description></item><item><title>esportshelper (deprecated)</title><link>https://dntco43u.github.io/apps/esportshelper/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/esportshelper/</guid><description>&lt;div class="alert alert-warning" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Deprecated&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;del&gt;## 데모 페이지&lt;/del&gt;
+&lt;img src="https://dntco43u.github.io/images/azvj6fml-1.webp" alt="image"&gt;&lt;/p&gt;</description></item><item><title>esportshelper (deprecated)</title><link>https://dntco43u.github.io/apps/esportshelper/</link><pubDate>Mon, 15 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/apps/esportshelper/</guid><description>&lt;div class="alert alert-warning" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Deprecated&lt;/div&gt;
 &lt;blockquote&gt;
 &lt;p&gt;lolesports.com 로그인 페이지 변경에 대응하지 못함
 &lt;img src="https://dntco43u.github.io/images/esportshelper-1.webp" alt="image"&gt;&lt;/p&gt;

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>postgresql on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/postgresql/</link><description>Recent content in postgresql on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/postgresql/index.xml" rel="self" type="application/rss+xml"/><item><title>bdkqpr0x</title><link>https://dntco43u.github.io/dev/bdkqpr0x/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/bdkqpr0x/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/spring-boot-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/bdkqpr0x"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="dockerfile"&gt;Dockerfile&lt;a class="td-heading-self-link" href="#dockerfile" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/bdkqpr0x/Dockerfile
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-dockerfile" data-lang="dockerfile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;FROM&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;ibm-semeru-runtimes:open-17-jre&lt;/span&gt;&lt;span style="color:#bf616a"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bf616a"&gt;&lt;/span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;#RUN adduser --no-create-home -u 1000 dev&lt;/span&gt;&lt;span style="color:#bf616a"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bf616a"&gt;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;RUN&lt;/span&gt; mkdir -p /usr/share/java &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; chown -R &lt;span style="color:#b48ead"&gt;1000&lt;/span&gt; /usr/share/java&lt;span style="color:#bf616a"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bf616a"&gt;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;USER&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;1000&lt;/span&gt;&lt;span style="color:#bf616a"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bf616a"&gt;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;COPY&lt;/span&gt; --chown&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;1000:1000 build/libs/*.jar /usr/share/java/app.jar&lt;span style="color:#bf616a"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bf616a"&gt;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;WORKDIR&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;/usr/share/java&lt;/span&gt;&lt;span style="color:#bf616a"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="host-구성"&gt;host 구성&lt;a class="td-heading-self-link" href="#host-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="bdkqpr0xsh"&gt;bdkqpr0x.sh &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#bdkqpr0xsh" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /home/dev/.local/bin/bdkqpr0x.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# bdkqpr0x&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;source&lt;/span&gt; /home/dev/.bashrc
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;source&lt;/span&gt; /home/dev/.local/bin/utils.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;log_file&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;/home/dev/.local/log/&lt;span style="color:#81a1c1;font-weight:bold"&gt;$(&lt;/span&gt;basename &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$0&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; sed &lt;span style="color:#a3be8c"&gt;&amp;#39;s/.sh//&amp;#39;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;)&lt;/span&gt;.log
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;msg_file&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;/home/dev/.local/log/&lt;span style="color:#81a1c1;font-weight:bold"&gt;$(&lt;/span&gt;basename &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$0&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; sed &lt;span style="color:#a3be8c"&gt;&amp;#39;s/.sh//&amp;#39;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;)&lt;/span&gt;.tmp
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; -i --rm --name&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;bdkqpr0x --network&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;dev &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; --add-host&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;host.docker.internal:host-gateway --user&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;1000:1000 &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; -e TZ&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;Asia/Seoul &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; -v /opt/bdkqpr0x/log:/usr/share/java/log:rw &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; -v /opt/bdkqpr0x/data:/usr/share/java/data:rw &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; e7hnr8ov/bdkqpr0x:open-17-jre &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; java -Dspring.profiles.active&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;prod -Xms2G -Xmx2G &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; -jar /usr/share/java/app.jar &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; --job.name&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$1&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; chunkSize&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$2&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; requestDate&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$3&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &amp;gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$log_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;--job.name=&lt;/span&gt;$1&lt;span style="color:#a3be8c"&gt; chunkSize=&lt;/span&gt;$2&lt;span style="color:#a3be8c"&gt; requestDate=&lt;/span&gt;$3&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &amp;gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$msg_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;tail -n3 &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$log_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; head -n1 &amp;gt;&amp;gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$msg_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#616e87;font-style:italic"&gt;#show count&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;send_tel_msg &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$TEL_BOT_KEY&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$TEL_CHAT_ID&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$msg_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rm &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$msg_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="post_buildsh"&gt;post_build.sh &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#post_buildsh" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/bdkqpr0x/config/post_build.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# 자동 build 후 처리&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;source&lt;/span&gt; /home/dev/.local/bin/utils.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;log_file&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;/home/dev/.local/log/&lt;span style="color:#81a1c1;font-weight:bold"&gt;$(&lt;/span&gt;basename &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$0&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; sed &lt;span style="color:#a3be8c"&gt;&amp;#39;s/.sh//&amp;#39;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;)&lt;/span&gt;.log
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;msg_file&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;/home/dev/.local/log/&lt;span style="color:#81a1c1;font-weight:bold"&gt;$(&lt;/span&gt;basename &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$0&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; sed &lt;span style="color:#a3be8c"&gt;&amp;#39;s/.sh//&amp;#39;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;)&lt;/span&gt;.tmp
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;jenkins_bot_key&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$3&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;tel_chat_id&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$4&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;{&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;echo&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$1&lt;span style="color:#a3be8c"&gt; #&lt;/span&gt;$2&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; show_file_stat &lt;span style="color:#a3be8c"&gt;&amp;#34;/opt/&lt;/span&gt;$1&lt;span style="color:#a3be8c"&gt;/build/libs/&lt;/span&gt;$1&lt;span style="color:#a3be8c"&gt;-0.0.1-SNAPSHOT.jar&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1"&gt;cd&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;/opt/&lt;/span&gt;$1&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;||&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;exit&lt;/span&gt; &lt;span style="color:#b48ead"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; docker build -t &lt;span style="color:#a3be8c"&gt;&amp;#34;e7hnr8ov/&lt;/span&gt;$1&lt;span style="color:#a3be8c"&gt;:open-17-jre&amp;#34;&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;/opt/&lt;/span&gt;$1&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;if&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;[&lt;/span&gt; -f &lt;span style="color:#a3be8c"&gt;&amp;#34;docker-compose.yml&amp;#34;&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;]&lt;/span&gt;&lt;span style="color:#eceff4"&gt;;&lt;/span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;then&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; docker compose rm -f -s
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; docker compose up -d
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; docker &lt;span style="color:#81a1c1"&gt;exec&lt;/span&gt; -i &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$1&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; date +&lt;span style="color:#a3be8c"&gt;&amp;#34;%Z %F %T&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#81a1c1;font-weight:bold"&gt;fi&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;}&lt;/span&gt; &amp;gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$log_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;read&lt;/span&gt; -ra args &amp;lt; &amp;lt;&lt;span style="color:#81a1c1"&gt;(&lt;/span&gt;docker images -q -f dangling&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;true&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker rmi &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;${&lt;/span&gt;args&lt;span style="color:#eceff4"&gt;[@]&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;}&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rm -rf &lt;span style="color:#a3be8c"&gt;&amp;#34;/opt/&lt;/span&gt;$1&lt;span style="color:#a3be8c"&gt;/build&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cp &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$log_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$msg_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;send_tel_msg &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$jenkins_bot_key&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$tel_chat_id&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$msg_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;rm &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$msg_file&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="logrotate"&gt;logrotate&lt;a class="td-heading-self-link" href="#logrotate" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vi /etc/logrotate.d/bdkqpr0x
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;/opt/bdkqpr0x/log/*.log {
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; daily
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; rotate 7
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; missingok
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; notifempty
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; dateext
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; dateyesterday
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; dateformat -%Y%m%d
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; create 0664 dev dev
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; sharedscripts
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; postrotate
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; docker restart promtail &amp;gt;/dev/null 2&amp;gt;&amp;amp;1 || true
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; endscript
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="jobs"&gt;Jobs&lt;a class="td-heading-self-link" href="#jobs" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th style="text-align: left"&gt;Jobs&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;Command&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;File&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;Remarks&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;bd01&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;bdkqpr0x.sh bd01 10000 $(date +%Y%m%d)&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;us-500.csv&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;pgsql -&amp;gt; Oracle, pgsql -&amp;gt; File -&amp;gt; Oracle&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;bd02&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;bdkqpr0x.sh bd02 10000 $(date +%Y%m%d)&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;us-500.csv&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Oracle -&amp;gt; pgsql, Oracle -&amp;gt; File -&amp;gt; pgsql&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;bd03&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;bdkqpr0x.sh bd03 10000 $(date +%Y%m%d)&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;music_tag.csv&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Oracle -&amp;gt; Oracle, Oracle -&amp;gt; File -&amp;gt; Oracle&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;bd04&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;bdkqpr0x.sh bd04 10000 $(date +%Y%m%d)&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;system_events.csv&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;pgsql -&amp;gt; Oracle, pgsql -&amp;gt; File -&amp;gt; Oracle&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="troubleshooting"&gt;Troubleshooting&lt;a class="td-heading-self-link" href="#troubleshooting" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;
+&lt;blockquote&gt;
+&lt;p&gt;=&amp;gt; ERROR [2/5] RUN adduser &amp;ndash;no-create-home -u 1000 dev&lt;/p&gt;</description></item><item><title>tag-edit (작성 중)</title><link>https://dntco43u.github.io/dev/tag-edit/</link><pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/tag-edit/</guid><description>&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;작성 중&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/react-logo.webp#center" alt="image"&gt;&lt;/p&gt;</description></item><item><title>med-exam</title><link>https://dntco43u.github.io/dev/med-exam/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/dev/med-exam/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/grafana-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="github-repository"&gt;GitHub repository&lt;a class="td-heading-self-link" href="#github-repository" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/dntco43u/med_exam"&gt;바로 가기&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="container-구성"&gt;container 구성&lt;a class="td-heading-self-link" href="#container-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="env"&gt;.env&lt;a class="td-heading-self-link" href="#env" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/python/.env
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;PGSQL_HOST&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;host.docker.internal&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;PGSQL_PORT&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;5432&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;PGSQL_DB&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;dev&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;PGSQL_USER&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;dev&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;PGSQL_PASSWORD&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;y***************************************************************&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;PAWAN_API_KEY&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;p**************************************************&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;GROQ_API_KEY&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;g*******************************************************&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;GEMINI_API_KEY&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;A**************************************&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;DEEPL_API_KEY&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;9**************************************&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;XWDFELA2_BOT_KEY&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;7*********************************************&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;PROXY_HOST&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;2**.**.**.*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;PROXY_PORT&lt;/span&gt;&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;6****&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="dockerfile"&gt;Dockerfile&lt;a class="td-heading-self-link" href="#dockerfile" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi /opt/python/Dockerfile
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-dockerfile" data-lang="dockerfile"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;FROM&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;python:3-slim&lt;/span&gt;&lt;span style="color:#bf616a"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bf616a"&gt;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;ENV&lt;/span&gt; TZ&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;Asia/Seoul&lt;span style="color:#bf616a"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#bf616a"&gt;&lt;/span&gt;&lt;span style="color:#81a1c1;font-weight:bold"&gt;RUN&lt;/span&gt; apt-get update &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; apt-get install -y python3 &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; python -m pip install --no-cache-dir --upgrade pip &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; pycryptodome &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; psycopg2-binary &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; requests bs4 lxml &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; selenium &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; deep-translator deepl &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; python-telegram-bot &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; g4f&lt;span style="color:#81a1c1"&gt;[&lt;/span&gt;all&lt;span style="color:#81a1c1"&gt;]&lt;/span&gt; openai groq google-generativeai &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; apt-get autoremove -y &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; apt-get clean autoclean &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; rm -rf /var/lib/apt/lists/*&lt;span style="color:#bf616a"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker build -t e7hnr8ov/python:3-slim /opt/python
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="med_examsh"&gt;med_exam.sh &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#med_examsh" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;vi ~/.local/bin/med_exam.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;#!/bin/bash
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#5e81ac;font-style:italic"&gt;&lt;/span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# med_exam&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;source&lt;/span&gt; /home/dev/.bashrc
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;source&lt;/span&gt; /home/dev/.local/bin/utils.sh
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;container&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;py-med-exam&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker ps -q --filter &lt;span style="color:#a3be8c"&gt;&amp;#34;name=&lt;/span&gt;$container&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; &lt;span style="color:#eceff4"&gt;|&lt;/span&gt; xargs -r docker stop
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sleep &lt;span style="color:#b48ead"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker run &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; -i --rm --name&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$container&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt; --network&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;dev --user&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;0:0 &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; --add-host&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;host.docker.internal:host-gateway &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; --env-file&lt;span style="color:#81a1c1"&gt;=&lt;/span&gt;/opt/python/.env &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; -v /home/dev/workspace/med_exam:/opt/python:rw &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; e7hnr8ov/python:3-slim &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; python /opt/python/med_exam.py &lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$@&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="jobs"&gt;Jobs&lt;a class="td-heading-self-link" href="#jobs" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th style="text-align: left"&gt;Command&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;Remarks&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;py_med_exam.sh -i RT51KR-PK01&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;기초 데이터 생성&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;py_med_exam.sh -d 8************&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;기초 데이터 삭제&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;py_med_exam.sh -a 8************&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;기초 데이터 생성&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;py_med_exam.sh -u 8************&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;주민등록번호 암호화&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;py_med_exam.sh -j 9********************==&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;주민등록번호 복호화&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;py_med_exam.sh -k 9********************==&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;암호화 키 갱신&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="데모-페이지"&gt;데모 페이지 &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;a class="td-heading-self-link" href="#%eb%8d%b0%eb%aa%a8-%ed%8e%98%ec%9d%b4%ec%a7%80" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/med-exam-1.webp" alt="image"&gt;&lt;/p&gt;</description></item><item><title>postgresql</title><link>https://dntco43u.github.io/infra/postgresql/</link><pubDate>Tue, 09 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/postgresql/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/postgresql-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;pre class="mermaid"&gt; graph LR
+ subgraph gvp6nx1a
+ A1[apps] &amp;lt;-- tcp --&amp;gt; B2[postgresql]
+ end
+ B2 &amp;lt;-- tcp --&amp;gt; D[client]&lt;/pre&gt;
+&lt;h2 id="host-구성"&gt;host 구성&lt;a class="td-heading-self-link" href="#host-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="사설-인증서로-외부-접속-개방"&gt;사설 인증서로 외부 접속 개방&lt;a class="td-heading-self-link" href="#%ec%82%ac%ec%84%a4-%ec%9d%b8%ec%a6%9d%ec%84%9c%eb%a1%9c-%ec%99%b8%eb%b6%80-%ec%a0%91%ec%86%8d-%ea%b0%9c%eb%b0%a9" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo rm -rf /var/lib/pgsql &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo dnf -y update &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo dnf module remove -y postgresql:16/server &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo dnf module install -y postgresql:16/server &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo postgresql-setup --initdb
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vi /var/lib/pgsql/data/pg_hba.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# &amp;#34;local&amp;#34; is for Unix domain socket connections only&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;local all all trust&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# IPv4 local connections:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;host all all 127.0.0.1/32 trust&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# IPv6 local connections:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;host all all ::1/128 trust&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# Allow replication connections from localhost, by a user with the&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# replication privilege.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;local replication all trust&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;host replication all 127.0.0.1/32 trust&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;host replication all ::1/128 trust&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;host all all all scram-sha-256&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;sudo vi /var/lib/pgsql/data/postgresql.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-ini" data-lang="ini"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# - Connection Settings -&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;listen_addresses&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#39;*&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# - Authentication -&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;password_encryption&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;scram-sha-256&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#616e87;font-style:italic"&gt;# - SSL -&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;ssl&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;on&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;ssl_cert_file&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#39;/var/lib/pgsql/server.crt&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;ssl_key_file&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#39;/var/lib/pgsql/server.key&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;ssl_ciphers&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#39; ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ARIA256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;ssl_ecdh_curve&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#39;X448:secp521r1:secp384r1&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;ssl_min_protocol_version&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#39;TLSv1.2&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;ssl_dh_params_file&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;=&lt;/span&gt; &lt;span style="color:#a3be8c"&gt;&amp;#39;/opt/nginx/ssl/dhparam.pem&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#8fbcbb"&gt;...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#81a1c1"&gt;cd&lt;/span&gt; /usr/share/pki/ca-trust-source/anchors &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo openssl req -new -x509 -nodes -text -out server.crt &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt; -keyout server.key -subj &lt;span style="color:#a3be8c"&gt;&amp;#39;/C=KR/ST=Seoul/L=Jungnang/O=fhy8vp3u/OU=dev/CN=fhy8vp3u/emailAddress=x*******-********@yahoo.com&amp;#39;&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo openssl x509 -in server.crt -noout -dates &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo chown dev:dev server.&lt;span style="color:#81a1c1"&gt;{&lt;/span&gt;key,crt&lt;span style="color:#81a1c1"&gt;}&lt;/span&gt; &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo chmod &lt;span style="color:#b48ead"&gt;0400&lt;/span&gt; server.key &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo mv /usr/share/pki/ca-trust-source/anchors/server.crt /var/lib/pgsql/server.crt &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo mv /usr/share/pki/ca-trust-source/anchors/server.key /var/lib/pgsql/server.key &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo chown postgres:postgres /var/lib/pgsql/server.crt &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;sudo chown postgres:postgres /var/lib/pgsql/server.key
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="디스크-mount"&gt;디스크 mount&lt;a class="td-heading-self-link" href="#%eb%94%94%ec%8a%a4%ed%81%ac-mount" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="alert alert-primary" role="alert"&gt;&lt;div class="h4 alert-heading" role="heading"&gt;Note&lt;/div&gt;
+&lt;blockquote&gt;
+&lt;p&gt;기본적으로 유일한 방법은 FAQ에 설명 된대로 &amp;ldquo;allocsize&amp;quot;마운트 옵션을 사용하는 것입니다.&lt;br&gt;
+InnoDB는 최대 16kB의 64페이지를 읽으므로 &amp;ldquo;allocsize=1M&amp;quot;이 가장 좋습니다.&lt;br&gt;
+고객과 마찬가지로 많은 DBA 또는 시스템 관리자도 이러한 동작을 인식하지 못할 수 있으며 실행 중인 시스템에서만 감지할 수 있습니다.&lt;br&gt;
+슬프게도, 나는 그것이 효과가 없었다고 말해야합니다. 미리 할당 된 공간의 크기는 원래 실행에서와 같이 계속 커졌습니다.&lt;br&gt;
+더 나쁜 것은이 명령을 실행 한 후 시작한 실행에도 영향을 미치지 않았다는 것입니다.&lt;br&gt;
+이는 마운트된 XFS 파일 시스템에 대해 &amp;ldquo;allocsize&amp;rdquo; 값을 변경할 수 없으며, 마운트 시 해당 값이 마운트 해제될 때까지 유효하다는 것을 증명합니다.&lt;br&gt;
+마운트 해제 한 다음 새로 마운트하여 &amp;ldquo;allocsize = 1M&amp;quot;을 제공 할 때만 고정 크기가 사전 할당 금액으로 표시되었습니다.&lt;br&gt;
+DBA의 관점에서 볼 때 이 변경으로 인해 MySQL 인스턴스의 종료를 피할 수 없음을 의미합니다. (물론 Galera 클러스터에 대해 이야기하면 노드를 한 번에 하나씩 처리 할 수 있기 때문에 시스템을 계속 사용할 수 있습니다.)&lt;/p&gt;</description></item></channel></rss>

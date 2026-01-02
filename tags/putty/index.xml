@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>putty on 대충어쩌고저쩌고샬라샬라</title><link>https://dntco43u.github.io/tags/putty/</link><description>Recent content in putty on 대충어쩌고저쩌고샬라샬라</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 14 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dntco43u.github.io/tags/putty/index.xml" rel="self" type="application/rss+xml"/><item><title>putty</title><link>https://dntco43u.github.io/infra/putty/</link><pubDate>Sun, 14 Dec 2025 00:00:00 +0000</pubDate><guid>https://dntco43u.github.io/infra/putty/</guid><description>&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/putty-logo.webp#center" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://dntco43u.github.io/images/putty-1.webp" alt="image"&gt;&lt;/p&gt;
+&lt;h2 id="windows-구성"&gt;windows 구성&lt;a class="td-heading-self-link" href="#windows-%ea%b5%ac%ec%84%b1" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="개요"&gt;개요&lt;a class="td-heading-self-link" href="#%ea%b0%9c%ec%9a%94" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;색상 &lt;sup id="fnref:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;접속 정보를 제외하고 구성된 dev@hostaddr 세션&lt;/li&gt;
+&lt;li&gt;D2Coding 의존&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="다운로드"&gt;다운로드&lt;a class="td-heading-self-link" href="#%eb%8b%a4%ec%9a%b4%eb%a1%9c%eb%93%9c" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a href="../putty-sessions.zip"&gt;putty-sessions.zip&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://github.com/naver/d2codingfont/releases/download/VER1.3.2/D2Coding-Ver1.3.2-20180524.zip"&gt;D2Coding-Ver1.3.2-20180524.zip&lt;/a&gt;&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Filename&lt;/th&gt;
+ &lt;th&gt;Remarks&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;putty-sessions.reg&lt;/td&gt;
+ &lt;td&gt;세션 정보 레지스트리&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="gitbash로-설치"&gt;gitbash로 설치&lt;a class="td-heading-self-link" href="#gitbash%eb%a1%9c-%ec%84%a4%ec%b9%98" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-sh" data-lang="sh"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;curl https://dntco43u.github.io/infra/putty-sessions.zip -o $USERPROFILE/Downloads/putty-sessions.zip &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;7z x -y -o&lt;span style="color:#a3be8c"&gt;&amp;#34;&lt;/span&gt;$USERPROFILE&lt;span style="color:#a3be8c"&gt;/Downloads&amp;#34;&lt;/span&gt; $USERPROFILE/Downloads/putty-sessions.zip &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;reg import $USERPROFILE/Downloads/putty-sessions.reg &lt;span style="color:#81a1c1"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#ebcb8b"&gt;&lt;/span&gt;find $USERPROFILE/Downloads/ -type f -name putty-sessions.* -exec rm &lt;span style="color:#81a1c1"&gt;{}&lt;/span&gt; &lt;span style="color:#ebcb8b"&gt;\;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="license"&gt;License&lt;a class="td-heading-self-link" href="#license" aria-label="Heading self-link"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;상업적 이용 제한 없음&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;putty: MIT &lt;sup id="fnref1:1"&gt;&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;D2Coding: OFL &lt;sup id="fnref:2"&gt;&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref"&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="footnotes" role="doc-endnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/49075439/putty-monokai-color-scheme-manually"&gt;https://stackoverflow.com/questions/49075439/putty-monokai-color-scheme-manually&lt;/a&gt;&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href="#fnref1:1" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:2"&gt;
+&lt;p&gt;&lt;a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html"&gt;https://www.chiark.greenend.org.uk/~sgtatham/putty/licence.html&lt;/a&gt;&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink"&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description></item></channel></rss>

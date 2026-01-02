@@ -1,0 +1,95 @@
+name: deploy-hugo
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - name: Debug host
+        run: dig +short txt ch whoami.cloudflare @1.1.1.1 | sed 's/"//g'
+      - name: Set SSH key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.GVP6NX1A_KEY }}
+          name: id_ed25519
+          known_hosts: 'placeholder'
+      - name: Adding known hosts
+        run: ssh-keyscan -H -t ed25519 -p ${{ secrets.GVP6NX1A_PORT }} ${{ secrets.GVP6NX1A_ADDR }} >> ~/.ssh/known_hosts
+      - name: Debug SSH
+        run: |
+          ssh -Q key
+          ls -alh ~/.ssh
+          ssh -T -p ${{ secrets.GVP6NX1A_PORT }} dev@${{ secrets.GVP6NX1A_ADDR }} -i ~/.ssh/id_ed25519
+      - name: Get artifacts from dev-server
+        run: |
+          rsync \
+            -avz \
+            --delete \
+            --exclude=".git/" \
+            -e "ssh -p ${{ secrets.GVP6NX1A_PORT }} -i ~/.ssh/id_ed25519" \
+            dev@${{ secrets.GVP6NX1A_ADDR }}:/opt/hugo/data/ \
+            ./
+      - name: Debug rsync
+        run: |
+          rsync -V
+          sudo apt-get update -y && sudo apt-get install -y tree && sudo tree -L 2 -f
+      - name: Set .env
+        run: |
+          . ./.env
+          echo "HUGO_VERSION=${HUGO_VERSION}" >> $GITHUB_ENV
+          echo "HUGO_EXTENDED=${HUGO_EXTENDED}" >> $GITHUB_ENV
+      - name: Setup hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '${{ env.HUGO_VERSION }}'
+          extended: '${{ env.HUGO_EXTENDED }}'
+      - name: Install Node.js dependencies
+        run: |
+          hugo mod graph
+          [[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true
+      - name: Restore cache
+        id: cache-restore
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/hugo_cache
+          key: hugo-${{ github.run_id }}
+          restore-keys:
+            hugo-
+      - name: Build hugo
+        env:
+          TZ: 'Asia/Seoul'
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --environment production \
+            --baseURL "https://dntco43u.github.io" \
+            --cacheDir "${{ runner.temp }}/hugo_cache"
+      - name: Save cache
+        id: cache-save
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ runner.temp }}/hugo_cache
+          key: ${{ steps.cache-restore.outputs.cache-primary-key }}
+      - name: Upload pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy pages
+        id: deployment
+        uses: actions/deploy-pages@v4
